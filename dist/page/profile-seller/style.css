@@ -1,0 +1,84 @@
+/* ---------- body element's */
+.container-profile {
+  backdrop-filter: blur(20px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-card {
+  width: 100%;
+  height: 22rem;
+  background-color: var(--primary-bg);
+  display: grid;
+  grid-template-rows: 220px auto;
+  overflow: auto;
+}
+
+/* ------ profile header section */
+.profile-header {
+  background: url("https://www.kumata-studio.com/img_works/a-juki-movie-3.jpg")
+    center;
+  background-size: cover;
+  margin: 10px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.main-profile {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  inset: calc(100% - 75px) auto auto 70px;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  background: url("https://i.seadn.io/gae/rw6j7WQTWWktad61R3VK-mQR_M-FyqWqwxzpNAWWk0hoFpHTDd_ItG3-BTirw2mquFa0DmA197u_2OPtcDqhOAKiG0mR42KkgYJm?auto=format&dpr=1&w=384")
+    center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.profile-names {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 30px;
+  border-radius: 0 50px 50px 0;
+  transform: translateX(-10px);
+}
+
+@media (min-width: 768px) {
+  .profile-names {
+    margin-top: 20px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profile-card {
+    border-radius: 0;
+  }
+
+  .main-profile {
+    inset: calc(100% - 75px) auto auto 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-names {
+    transform: translateX(0);
+    margin-top: -10px;
+  }
+}
+
+.button-price {
+  background-color: #e82b2b !important;
+}
+
+.button-price:hover {
+  background-color: #e82b2bcb !important;
+}

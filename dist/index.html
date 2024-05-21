@@ -1,0 +1,1902 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nusantara NFT</title>
+  <link rel="stylesheet" href="/dist/output.css" />
+  <link rel="stylesheet" href="/src/input.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/dist/swiper-bundle.min.css" />
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+</head>
+
+<body>
+  <!-- NAVBAR SECTION STARTED -->
+  <header class="bg-white sticky top-0 z-50">
+    <nav
+      class="relative px-4 py-4 flex justify-between items-center bg-[#1f1d1b]"
+    >
+      <a class="text-2xl" href="#">
+        <h1 class="logo text-[#E82B2B]">Nusantara NFT</h1>
+      </a>
+      <ul>
+        <div class="flex items-center">
+          <a class="mr-auto text-2xl" href="#">
+            <h1 class="logo text-[#E82B2B]">Nusantara NFT</h1>
+          </a>
+        </div>
+        <li class="mb-1">
+          <a class="block p-4 text-sm font-semibold text-black hover:bg-blue-50 hover:text-[#E82B2B] rounded"
+              href="index.html">Home</a>
+      </li>
+        <li class="mb-1">
+          <a
+            class="block p-4 text-sm font-semibold text-black hover:bg-blue-50 hover:text-[#E82B2B] rounded"
+            href="#"
+            >Ranking</a
+          >
+        </li>
+        <li class="mb-1">
+          <a
+            class="block p-4 text-sm font-semibold text-black hover:bg-blue-50 hover:text-[#E82B2B] rounded"
+            href="#"
+            >Collections</a
+          >
+        </li>
+        <li class="mb-8">
+          <a
+            class="block p-4 text-sm font-semibold text-black hover:bg-blue-50 hover:text-[#E82B2B] rounded"
+            href="#"
+            >Trending</a
+          >
+        </li>
+        <div class="mt-20">
+          <div class="pt-6">
+            <a type="button" data-modal-target="crypto-modal" data-modal-toggle="crypto-modal"
+                            class="connect-to-wallet block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-[#E82B2B] hover:bg-[#e82b2bd0] rounded-xl"
+                            href="#">Connect to Wallet</a>
+          </div>
+          <p class="my-4 text-xs text-center text-gray-400">
+            <span>Copyright © 2024</span>
+          </p>
+        </div>
+      </ul>
+      
+        <div class="">
+          <!-- untuk membuat Hamburger Menu-->
+          <div for="menu-toggle" class="menu-toggle flex items-center">
+            <input id="menu-toggle" type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>    
+    </nav>
+
+    <!-- CONNECT TO YOUR WALLET MODAL SECTION STARTED -->
+    <div id="crypto-modal" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative p-4 w-full max-w-md max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <!-- Modal header -->
+                <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                        Connect wallet
+                    </h3>
+                    <button type="button"
+                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm h-8 w-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                        data-modal-toggle="crypto-modal">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-4 md:p-5">
+                    <p class="text-sm font-normal text-gray-500 dark:text-gray-400">
+                        Connect with one of our available wallet providers or create a new
+                        one.
+                    </p>
+                    <ul class="my-4 space-y-3">
+                        <li>
+                            <a href="#"
+                                class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                                <svg aria-hidden="true" class="h-4" viewBox="0 0 40 38" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M39.0728 0L21.9092 12.6999L25.1009 5.21543L39.0728 0Z" fill="#E17726" />
+                                    <path d="M0.966797 0.0151367L14.9013 5.21656L17.932 12.7992L0.966797 0.0151367Z"
+                                        fill="#E27625" />
+                                    <path
+                                        d="M32.1656 27.0093L39.7516 27.1537L37.1004 36.1603L27.8438 33.6116L32.1656 27.0093Z"
+                                        fill="#E27625" />
+                                    <path
+                                        d="M7.83409 27.0093L12.1399 33.6116L2.89876 36.1604L0.263672 27.1537L7.83409 27.0093Z"
+                                        fill="#E27625" />
+                                    <path
+                                        d="M17.5203 10.8677L17.8304 20.8807L8.55371 20.4587L11.1924 16.4778L11.2258 16.4394L17.5203 10.8677Z"
+                                        fill="#E27625" />
+                                    <path
+                                        d="M22.3831 10.7559L28.7737 16.4397L28.8067 16.4778L31.4455 20.4586L22.1709 20.8806L22.3831 10.7559Z"
+                                        fill="#E27625" />
+                                    <path d="M12.4115 27.0381L17.4768 30.9848L11.5928 33.8257L12.4115 27.0381Z"
+                                        fill="#E27625" />
+                                    <path d="M27.5893 27.0376L28.391 33.8258L22.5234 30.9847L27.5893 27.0376Z"
+                                        fill="#E27625" />
+                                    <path
+                                        d="M22.6523 30.6128L28.6066 33.4959L23.0679 36.1282L23.1255 34.3884L22.6523 30.6128Z"
+                                        fill="#D5BFB2" />
+                                    <path
+                                        d="M17.3458 30.6143L16.8913 34.3601L16.9286 36.1263L11.377 33.4961L17.3458 30.6143Z"
+                                        fill="#D5BFB2" />
+                                    <path d="M15.6263 22.1875L17.1822 25.4575L11.8848 23.9057L15.6263 22.1875Z"
+                                        fill="#233447" />
+                                    <path d="M24.3739 22.1875L28.133 23.9053L22.8184 25.4567L24.3739 22.1875Z"
+                                        fill="#233447" />
+                                    <path d="M12.8169 27.0049L11.9606 34.0423L7.37109 27.1587L12.8169 27.0049Z"
+                                        fill="#CC6228" />
+                                    <path d="M27.1836 27.0049L32.6296 27.1587L28.0228 34.0425L27.1836 27.0049Z"
+                                        fill="#CC6228" />
+                                    <path
+                                        d="M31.5799 20.0605L27.6165 24.0998L24.5608 22.7034L23.0978 25.779L22.1387 20.4901L31.5799 20.0605Z"
+                                        fill="#CC6228" />
+                                    <path
+                                        d="M8.41797 20.0605L17.8608 20.4902L16.9017 25.779L15.4384 22.7038L12.3988 24.0999L8.41797 20.0605Z"
+                                        fill="#CC6228" />
+                                    <path d="M8.15039 19.2314L12.6345 23.7816L12.7899 28.2736L8.15039 19.2314Z"
+                                        fill="#E27525" />
+                                    <path d="M31.8538 19.2236L27.2061 28.2819L27.381 23.7819L31.8538 19.2236Z"
+                                        fill="#E27525" />
+                                    <path
+                                        d="M17.6412 19.5088L17.8217 20.6447L18.2676 23.4745L17.9809 32.166L16.6254 25.1841L16.625 25.1119L17.6412 19.5088Z"
+                                        fill="#E27525" />
+                                    <path
+                                        d="M22.3562 19.4932L23.3751 25.1119L23.3747 25.1841L22.0158 32.1835L21.962 30.4328L21.75 23.4231L22.3562 19.4932Z"
+                                        fill="#E27525" />
+                                    <path
+                                        d="M27.7797 23.6011L27.628 27.5039L22.8977 31.1894L21.9414 30.5138L23.0133 24.9926L27.7797 23.6011Z"
+                                        fill="#F5841F" />
+                                    <path
+                                        d="M12.2373 23.6011L16.9873 24.9926L18.0591 30.5137L17.1029 31.1893L12.3723 27.5035L12.2373 23.6011Z"
+                                        fill="#F5841F" />
+                                    <path
+                                        d="M10.4717 32.6338L16.5236 35.5013L16.4979 34.2768L17.0043 33.8323H22.994L23.5187 34.2753L23.48 35.4989L29.4935 32.641L26.5673 35.0591L23.0289 37.4894H16.9558L13.4197 35.0492L10.4717 32.6338Z"
+                                        fill="#C0AC9D" />
+                                    <path
+                                        d="M22.2191 30.231L23.0748 30.8354L23.5763 34.8361L22.8506 34.2234H17.1513L16.4395 34.8485L16.9244 30.8357L17.7804 30.231H22.2191Z"
+                                        fill="#161616" />
+                                    <path
+                                        d="M37.9395 0.351562L39.9998 6.53242L38.7131 12.7819L39.6293 13.4887L38.3895 14.4346L39.3213 15.1542L38.0875 16.2779L38.8449 16.8264L36.8347 19.1742L28.5894 16.7735L28.5179 16.7352L22.5762 11.723L37.9395 0.351562Z"
+                                        fill="#763E1A" />
+                                    <path
+                                        d="M2.06031 0.351562L17.4237 11.723L11.4819 16.7352L11.4105 16.7735L3.16512 19.1742L1.15488 16.8264L1.91176 16.2783L0.678517 15.1542L1.60852 14.4354L0.350209 13.4868L1.30098 12.7795L0 6.53265L2.06031 0.351562Z"
+                                        fill="#763E1A" />
+                                    <path
+                                        d="M28.1861 16.2485L36.9226 18.7921L39.7609 27.5398L32.2728 27.5398L27.1133 27.6049L30.8655 20.2912L28.1861 16.2485Z"
+                                        fill="#F5841F" />
+                                    <path
+                                        d="M11.8139 16.2485L9.13399 20.2912L12.8867 27.6049L7.72971 27.5398H0.254883L3.07728 18.7922L11.8139 16.2485Z"
+                                        fill="#F5841F" />
+                                    <path
+                                        d="M25.5283 5.17383L23.0847 11.7736L22.5661 20.6894L22.3677 23.4839L22.352 30.6225H17.6471L17.6318 23.4973L17.4327 20.6869L16.9139 11.7736L14.4707 5.17383H25.5283Z"
+                                        fill="#F5841F" />
+                                </svg>
+                                <span class="flex-1 ms-3 whitespace-nowrap">MetaMask</span>
+                                <span
+                                    class="inline-flex items-center justify-center px-2 py-0.5 ms-3 text-xs font-medium text-gray-500 bg-gray-200 rounded dark:bg-gray-700 dark:text-gray-400">Popular</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                                <svg aria-hidden="true" class="h-5" viewBox="0 0 292 292" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M145.7 291.66C226.146 291.66 291.36 226.446 291.36 146C291.36 65.5541 226.146 0.339844 145.7 0.339844C65.2542 0.339844 0.0400391 65.5541 0.0400391 146C0.0400391 226.446 65.2542 291.66 145.7 291.66Z"
+                                        fill="#3259A5" />
+                                    <path
+                                        d="M195.94 155.5C191.49 179.08 170.8 196.91 145.93 196.91C117.81 196.91 95.0204 174.12 95.0204 146C95.0204 117.88 117.81 95.0897 145.93 95.0897C170.8 95.0897 191.49 112.93 195.94 136.5H247.31C242.52 84.7197 198.96 44.1797 145.93 44.1797C89.6904 44.1797 44.1104 89.7697 44.1104 146C44.1104 202.24 89.7004 247.82 145.93 247.82C198.96 247.82 242.52 207.28 247.31 155.5H195.94Z"
+                                        fill="white" />
+                                </svg>
+                                <span class="flex-1 ms-3 whitespace-nowrap">Coinbase Wallet</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                                <svg aria-hidden="true" svg class="h-5" viewBox="0 0 75.591 75.591"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <linearGradient id="a" gradientTransform="matrix(0 -54.944 -54.944 0 23.62 79.474)"
+                                        gradientUnits="userSpaceOnUse" x2="1">
+                                        <stop offset="0" stop-color="#ff1b2d" />
+                                        <stop offset=".3" stop-color="#ff1b2d" />
+                                        <stop offset=".614" stop-color="#ff1b2d" />
+                                        <stop offset="1" stop-color="#a70014" />
+                                    </linearGradient>
+                                    <linearGradient id="b" gradientTransform="matrix(0 -48.595 -48.595 0 37.854 76.235)"
+                                        gradientUnits="userSpaceOnUse" x2="1">
+                                        <stop offset="0" stop-color="#9c0000" />
+                                        <stop offset=".7" stop-color="#ff4b4b" />
+                                        <stop offset="1" stop-color="#ff4b4b" />
+                                    </linearGradient>
+                                    <g transform="matrix(1.3333 0 0 -1.3333 0 107.2)">
+                                        <path
+                                            d="m28.346 80.398c-15.655 0-28.346-12.691-28.346-28.346 0-15.202 11.968-27.609 26.996-28.313.44848-.02115.89766-.03314 1.3504-.03314 7.2574 0 13.876 2.7289 18.891 7.2137-3.3227-2.2036-7.2074-3.4715-11.359-3.4715-6.7504 0-12.796 3.3488-16.862 8.6297-3.1344 3.6999-5.1645 9.1691-5.3028 15.307v1.3349c.13821 6.1377 2.1683 11.608 5.302 15.307 4.0666 5.2809 10.112 8.6297 16.862 8.6297 4.1526 0 8.038-1.2679 11.361-3.4729-4.9904 4.4643-11.569 7.1876-18.786 7.2144-.03596 0-.07122.0014-.10718.0014z"
+                                            fill="url(#a)" />
+                                        <path
+                                            d="m19.016 68.025c2.6013 3.0709 5.9607 4.9227 9.631 4.9227 8.2524 0 14.941-9.356 14.941-20.897s-6.6891-20.897-14.941-20.897c-3.6703 0-7.0297 1.851-9.6303 4.922 4.0659-5.2809 10.111-8.6297 16.862-8.6297 4.1519 0 8.0366 1.2679 11.359 3.4715 5.802 5.1906 9.4554 12.735 9.4554 21.133 0 8.397-3.6527 15.941-9.4533 21.131-3.3234 2.205-7.2088 3.4729-11.361 3.4729-6.7504 0-12.796-3.3488-16.862-8.6297"
+                                            fill="url(#b)" />
+                                    </g>
+                                </svg>
+                                <span class="flex-1 ms-3 whitespace-nowrap">Opera Wallet</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                                <svg aria-hidden="true" class="h-5" viewBox="0 0 512 512" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs>
+                                        <radialGradient cx="0%" cy="50%" fx="0%" fy="50%" r="100%"
+                                            id="radialGradient-1">
+                                            <stop stop-color="#5D9DF6" offset="0%"></stop>
+                                            <stop stop-color="#006FFF" offset="100%"></stop>
+                                        </radialGradient>
+                                    </defs>
+                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="logo">
+                                            <rect id="base" fill="url(#radialGradient-1)" x="0" y="0" width="512"
+                                                height="512" rx="256"></rect>
+                                            <path
+                                                d="M169.209772,184.531136 C217.142772,137.600733 294.857519,137.600733 342.790517,184.531136 L348.559331,190.179285 C350.955981,192.525805 350.955981,196.330266 348.559331,198.676787 L328.82537,217.99798 C327.627045,219.171241 325.684176,219.171241 324.485851,217.99798 L316.547278,210.225455 C283.10802,177.485633 228.89227,177.485633 195.453011,210.225455 L186.951456,218.549188 C185.75313,219.722448 183.810261,219.722448 182.611937,218.549188 L162.877976,199.227995 C160.481326,196.881474 160.481326,193.077013 162.877976,190.730493 L169.209772,184.531136 Z M383.602212,224.489406 L401.165475,241.685365 C403.562113,244.031874 403.562127,247.836312 401.165506,250.182837 L321.971538,327.721548 C319.574905,330.068086 315.689168,330.068112 313.292501,327.721609 C313.292491,327.721599 313.29248,327.721588 313.29247,327.721578 L257.08541,272.690097 C256.486248,272.103467 255.514813,272.103467 254.915651,272.690097 C254.915647,272.690101 254.915644,272.690105 254.91564,272.690108 L198.709777,327.721548 C196.313151,330.068092 192.427413,330.068131 190.030739,327.721634 C190.030725,327.72162 190.03071,327.721606 190.030695,327.721591 L110.834524,250.181849 C108.437875,247.835329 108.437875,244.030868 110.834524,241.684348 L128.397819,224.488418 C130.794468,222.141898 134.680206,222.141898 137.076856,224.488418 L193.284734,279.520668 C193.883897,280.107298 194.85533,280.107298 195.454493,279.520668 C195.454502,279.520659 195.45451,279.520651 195.454519,279.520644 L251.65958,224.488418 C254.056175,222.141844 257.941913,222.141756 260.338618,224.488222 C260.338651,224.488255 260.338684,224.488288 260.338717,224.488321 L316.546521,279.520644 C317.145683,280.107273 318.117118,280.107273 318.71628,279.520644 L374.923175,224.489406 C377.319825,222.142885 381.205562,222.142885 383.602212,224.489406 Z"
+                                                id="WalletConnect" fill="#FFFFFF" fill-rule="nonzero"></path>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span class="flex-1 ms-3 whitespace-nowrap">WalletConnect</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                                <svg aria-hidden="true" class="h-4" viewBox="0 0 96 96" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M72.0998 0.600098H48.3998H24.5998H0.799805V24.4001V48.2001V49.7001V71.8001V71.9001V95.5001H24.5998V72.0001V71.9001V49.8001V48.3001V24.5001H48.3998H72.1998H95.9998V0.700104H72.0998V0.600098Z"
+                                        fill="#617BFF" />
+                                    <path
+                                        d="M48.5 71.8002H72.1V95.6002H73C79.1 95.6002 84.9 93.2002 89.2 88.9002C93.5 84.6002 95.9 78.8002 95.9 72.7002V48.2002H48.5V71.8002Z"
+                                        fill="#617BFF" />
+                                </svg>
+                                <span class="flex-1 ms-3 whitespace-nowrap">Fortmatic</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div>
+                        <a href="#"
+                            class="inline-flex items-center text-xs font-normal text-gray-500 hover:underline dark:text-gray-400">
+                            <svg class="w-3 h-3 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 20 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M7.529 7.988a2.502 2.502 0 0 1 5 .191A2.441 2.441 0 0 1 10 10.582V12m-.01 3.008H10M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            Why do I need to connect with my wallet?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CONNECT TO YOUR WALLET MODAL SECTION ENDED -->
+  </header>
+  
+  <!-- NAVBAR SECTION ENDED -->
+
+
+  <!-- CRYPTO PRICE MARQUEE SECTION STARTED -->
+  <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script>
+  <div id="coinmarketcap-widget-marquee" coins="1,1027,825,52,5426,74,1839,2010,3890,5805" currency="USD" theme="light"
+    transparent="false" show-symbol-logo="true" class="sticky top-[72px] z-40"></div>
+  <!-- CRYPTO PRICE MARQUEE SECTION STARTED -->
+
+  <!-- SEARCH SECTION STARTED -->
+  <div class="justify-center items-center h-full mt-2 mb-4">
+    <h1 class="justify-center text-center font-semibold font-[mainFont] text-5xl mb-2">
+      <span class="typing">
+        <span class="search-text text-black">Search for</span> <span class="nft-text text-[#E82B2B]">NFT here</span>
+      </span>
+    </h1>
+    <form class="search-bar max-w-lg mx-auto">
+      <div class="flex">
+        <label for="search-dropdown" class="mb-2 text-sm font-medium text-gray-900 sr-only"></label>
+        <button id="dropdown-button" data-dropdown-toggle="dropdown"
+          class="categories-search flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-white bg-[#E82B2B] border border-[#E82B2B] rounded-s-lg hover:bg-[#E82B2B] focus:ring-4 focus:outline-none focus:ring-gray-100"
+          type="button">
+          Categories
+          <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="m1 1 4 4 4-4" />
+          </svg>
+        </button>
+        <div id="dropdown"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+          <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdown-button">
+            <li>
+              <button type="button"
+                class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                Gaming
+              </button>
+            </li>
+            <li>
+              <button type="button"
+                class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                Music
+              </button>
+            </li>
+            <li>
+              <button type="button"
+                class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                PFP's
+              </button>
+            </li>
+            <li>
+              <button type="button"
+                class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                ART
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="relative w-full">
+          <input type="search" id="search-dropdown"
+            class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg border-s-gray-50 border-s-2 border border-gray-300 focus:ring-[#E82B2B] focus:border-[#E82B2B] dark:bg-gray-700 dark:border-s-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-[#E82B2B]"
+            placeholder="Search..." required />
+          <button type="submit"
+            class="search-icon absolute top-0 end-0 p-2.5 text-sm font-medium h-full text-white bg-[#E82B2B] rounded-e-lg border border-[#E82B2B] hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
+            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+            </svg>
+            <span class="sr-only">Search</span>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <hr />
+  <!-- SEARCH SECTION ENDED -->
+
+  <br />
+
+  <!-- HERO SECTION STARTED -->
+  <div class="bg-white font-sans flex flex-col items-center justify-center mt-3">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+        <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left lg:flex lg:items-center">
+          <div class="">
+            <div class="flex flex-col items-center justify-center">
+              <a class="inline-flex px-1 py-1 gap-x-2 rounded-xl border-[#E82B2B] border-2 hover:border-[#E82B2B] items-center text-sm font-semibold text-gray-600 space-x-1"
+                href="#">
+                <span
+                  class="bg-[#f6f6f6] flex items-center justify-center gap-2 text-[#E82B2B] text-sm font-semibold px-2.5 py-0.5 rounded-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="h-6 w-6 text-[#E82B2B]">
+                    <path d="m3 11 18-5v12L3 14v-3z"></path>
+                    <path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"></path>
+                  </svg>
+                  New
+                </span>
+                <span class="text-black">Important improvements</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </a>
+              <h1
+                class="title text-center mt-4 md:text-8xl text-6xl font-[mainFont] font-semibold text-gray-900 sm:mt-5 sm:leading-none lg:mt-6 lg:text-5xl xl:text-6xl">
+                <p class="sm:block text-black">Indonesian No.1</p>
+                <span class="text-zinc-500 md:block">Most Trusted</span>
+                <p class="text-[#E82B2B] md:block">NFT Marketplace</p>
+              </h1>
+            </div>
+            <div class="mt-5 sm:flex sm:justify-center lg:justify-start">
+              <button
+                class="inline-flex font-[mainFont] text-3xl items-center text-white bg-[#E82B2B] justify-center rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full sm:w-auto">
+                Explore Now!
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="mt-8 ml-auto sm:mt-24 lg:mt-0 lg:col-span-5">
+          <p class="text-base ml-auto text-gray-800 sm:text-xl lg:text-lg xl:text-xl">
+            Explore Indonesia's rich culture through the lens of digital art
+            with our NFT platform, where every pixel holds a story, every
+            brushstroke captures the essence of tradition.
+          </p>
+          <div class="mt-12 ml-auto">
+            <div class="grid grid-cols-3 gap-6 sm:gap-6 xl:gap-8">
+              <div class="text-center sm:flex sm:items-center sm:justify-center">
+                <div class="sm:flex-shrink-0">
+                  <div class="flow-root">
+                    <div
+                      class="border w-fit transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 inline-flex items-center justify-center px-3 py-0.5 text-sm font-medium leading-5 text-[#f6f6f6] bg-[#E82B2B] rounded-full">
+                      Vol/Day
+                    </div>
+                    <p class="text-5xl font-bold font-[mainFont] text-black">
+                      $2M+
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center sm:flex sm:items-center sm:justify-center">
+                <div class="sm:flex-shrink-0">
+                  <div class="flow-root">
+                    <div
+                      class="border w-fit transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 inline-flex items-center justify-center px-3 py-0.5 text-sm font-medium leading-5 text-[#f6f6f6] bg-[#E82B2B] rounded-full">
+                      Users
+                    </div>
+                    <p class="text-5xl font-bold ml-4 font-[mainFont] text-black">
+                      90K+
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center sm:flex sm:items-center sm:justify-center">
+                <div class="sm:flex-shrink-0">
+                  <div class="flow-root">
+                    <div
+                      class="border w-fit transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 inline-flex items-center justify-center px-3 py-0.5 text-sm font-medium leading-5 text-[#f6f6f6] bg-[#E82B2B] rounded-full">
+                      NFT
+                    </div>
+                    <p class="text-5xl font-bold ml-4 font-[mainFont] text-black">
+                      5K+
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-12 flex justify-center space-x-3">
+            <span class="relative flex h-14 w-14 shrink-0 overflow-hidden rounded-full">
+              <img class="aspect-square h-full w-full" alt="User 1"
+                src="https://i.seadn.io/gcs/files/32ebd6a0d7d4822e7489500e0f56837f.jpg?auto=format&dpr=1&w=384;width=40" />
+            </span>
+            <span class="relative flex h-14 w-14 shrink-0 overflow-hidden rounded-full">
+              <img class="aspect-square h-full w-full" alt="User 2"
+                src="https://i.seadn.io/gae/frQs4w8F9K6ZyyWAEIXVybqQ2f2qeP1afj1ZAPQSd_ACuJ_gYPgskY9zlvB2ZqSzEfkOyGBrooEeWPUffRon229TxF_JJbPeWbwA?auto=format&dpr=1&w=1000;width=40" />
+            </span>
+            <span class="relative flex h-14 w-14 shrink-0 overflow-hidden rounded-full">
+              <img class="aspect-square h-full w-full" alt="User 3"
+                src="https://i.seadn.io/gae/9l7MaM-hOB53NK6nUnDFVsGQ5KUk5qzAhgkXFac2BR1yk2XFaZ_fXJOsUiSdoCOyCy8-DU2m0lap2GglrbWK2NYVVKR9K1k5pSst?auto=format&dpr=1&w=1000;width=40" />
+            </span>
+            <span class="relative flex h-14 w-14 shrink-0 overflow-hidden rounded-full">
+              <img class="aspect-square h-full w-full" alt="User 4"
+                src="https://i.seadn.io/gae/mjfsTZ00Mh91OHinSFwBvg55fAjnUaFKs0SREiJoR_Q8E_SHx1fvSgHv1dC65LBagF6FZhDL_GRoiFXYszT6PHSjxNnh-I28QDd4sQ?auto=format&dpr=1&w=1000;width=40" />
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- HERO SECTION ENDED -->
+
+  <br />
+
+  <!-- SOCIAL COMPANY SPONSORED SECTION STARTED -->
+  <div class="flex mt-5 items-center justify-center space-x-4 flex-col">
+    <p class="mr-4 text-sm font-[secondFont] italic font-semibold text-gray-700">
+      Trusted by:
+    </p>
+    <br />
+    <div class="marquee-container w-full overflow-hidden">
+      <div class="marquee flex items-center">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Spotify_logo_with_text.svg/640px-Spotify_logo_with_text.svg.png"
+          alt="Company 1 Logo" class="h-7 mx-8" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Coinbase.svg/2560px-Coinbase.svg.png"
+          alt="Company 2 Logo" class="h-5 mx-8" />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Binance_logo.svg/2560px-Binance_logo.svg.png"
+          alt="Company 3 Logo" class="h-7 mx-8" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Indodax_Logo-Blue.png" alt="Company 4 Logo"
+          class="h-7 mx-8" />
+      </div>
+    </div>
+  </div>
+  <!-- SOCIAL COMPANY SPONSORED SECTION ENDED -->
+
+  <!-- TRENDING THIS WEEK SECTION STARTED-->
+  <div class="flex justify-center items-center h-full mt-5">
+    <h1 class="text-center font-semibold font-[mainFont] text-5xl text-black">
+      <span class="text-[#E82B2B]">Trending</span> This Week
+    </h1>
+  </div>
+  <div class="slide-container swiper swiper1">
+    <div class="slide-content slide-content1">
+      <div class="card-wrapper swiper-wrapper font-[secondFont]">
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <div class="card-image">
+              <a href="/dist/page/detail-nft/index.html">
+                <img src="https://i.seadn.io/gae/7eG1ARDkspDwD0amAWC5kcMlnJakHsopLIfde1rF1Ksxm52F5IGI6vXqOTreOdePI9KPo4dBC5GFwRxkmkp2JdMHCN7waOU8qpr9Ww?auto=format&dpr=1&w=384"
+                  alt="Karafuru" class="card-img" /></a>
+            </div>
+          </div>
+
+          <div class="card-content">
+            <h2 class="soda-name">JukiVerse</h2>
+            <p class="description">Floor: 0.01 ETH</p>
+          </div>
+        </div>
+
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <div class="card-image">
+              <img
+                src="https://i.seadn.io/gae/hrvN_ZAaUoDisM6JtJCpRKYgguthQcGKMxlt2ja-tITeMUrf-KPjw_Rqvwn0qDxNy6c9lCRw7PP-hfGlrUlyXY1OvfGPKticPJUveQ?auto=format&dpr=1&w=384"
+                alt="MindBlowon" class="card-img" />
+            </div>
+          </div>
+
+          <div class="card-content">
+            <h2 class="soda-name">Mindblowon</h2>
+            <p class="description">Floor: 0.05 ETH</p>
+          </div>
+        </div>
+
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"> </span>
+            <div class="card-image">
+              <img
+                src="https://i.seadn.io/gae/Rp6FaltzUeR5opEtx3t5hmvWfFj8AZiNERq8TUB_9KGqe7j73UBHzN-vjd9ZZPORJlf_rHwJZaHGRpEPK9xxHhGjfEsa4EmPp6Sk_w?auto=format&dpr=1&w=384"
+                alt="Jukiverse" class="card-img" />
+            </div>
+          </div>
+
+          <div class="card-content">
+            <h2 class="soda-name">JukiVerse</h2>
+            <p class="description">Floor: 0.5 ETH</p>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"> </span>
+            <div class="card-image">
+              <img src="https://i.seadn.io/s/raw/files/ac78868f0800e396b3aec26014cb6440.png?auto=format&dpr=1&w=384"
+                alt="Mutant Ape Yacht Club" class="card-img" />
+            </div>
+          </div>
+
+          <div class="card-content">
+            <h2 class="soda-name">Mutant Ape Yacht Club</h2>
+            <p class="description">Floor: 2.5 ETH</p>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"> </span>
+            <div class="card-image">
+              <img
+                src="https://i.seadn.io/gae/JuQHPkErFScGb7O61h69BIbhjRAX9TswDvfxXPi1t4B08HNev5jCmErr9e1sS2v_flBX6PieMLJXDSUcsUr23VLZ_df9IWksgpm3?auto=format&dpr=1&w=384"
+                alt="Bored Ape Yacht Club" class="card-img" />
+            </div>
+          </div>
+
+          <div class="card-content">
+            <h2 class="soda-name">Bored Ape Yacht Club</h2>
+            <p class="description">Floor: 5 ETH</p>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"> </span>
+            <div class="card-image">
+              <img src="https://i.seadn.io/gcs/files/c257c8183b872019da492815a0868411.jpg?auto=format&dpr=1&w=384"
+                alt="Karafuru" class="card-img" />
+            </div>
+          </div>
+
+          <div class="card-content">
+            <h2 class="soda-name">Karafuru</h2>
+            <p class="description">Floor: 0.01 ETH</p>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"> </span>
+            <div class="card-image">
+              <img src="https://i.seadn.io/s/raw/files/cbd124367d0776b60c1b8d1332b0561b.png?auto=format&dpr=1&w=1000"
+                alt="LoudPunx" class="card-img" />
+            </div>
+          </div>
+
+          <div class="card-content">
+            <h2 class="soda-name">Loud Punx</h2>
+            <p class="description">Floor: 0.8 ETH</p>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"> </span>
+            <div class="card-image">
+              <img src="https://i.seadn.io/gcs/files/abb48153cd4b02ddcfc8236cdc35622c.png?auto=format&dpr=1&w=384"
+                alt="Coolman Universe" class="card-img" />
+            </div>
+          </div>
+
+          <div class="card-content">
+            <h2 class="soda-name">Coolman Universe</h2>
+            <p class="description">Floor: 0.2 ETH</p>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"> </span>
+            <div class="card-image">
+              <img src="https://i.seadn.io/s/raw/files/05e1207b10ab26fa56dee875f8ada247.png?auto=format&dpr=1&w=384"
+                alt="My Pet Hooligan" class="card-img" />
+            </div>
+          </div>
+
+          <div class="card-content">
+            <h2 class="soda-name">My Pet Hooligan</h2>
+            <p class="description">Floor: 0.5 ETH</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="swiper-button-next swiper-nav-btn"></div>
+      <div class="swiper-button-prev swiper-nav-btn"></div> -->
+    <br />
+    <div class="swiper-pagination swiper-pagination1"></div>
+  </div>
+  <!-- TRENDING THIS WEEK SECTION ENDED-->
+
+  <!-- RANKING VOLUME STARTED -->
+  <link rel="stylesheet"
+    href="https://horizon-tailwind-react-corporate-7s21b54hb-horizon-ui.vercel.app/static/css/main.d7f96858.css" />
+  <div class="flex flex-col justify-center items-center lg:h-[70vh] max-md:-[30vh]">
+    <div class="relative flex max-w-[1040px] h-[490px] w-full flex-col rounded-[10px] bg-white">
+      <div class="flex h-fit w-full items-center justify-between rounded-t-2xl bg-white px-4 pb-[20px] pt-4">
+        <h4 class="text-4xl font-semibold text-black font-[mainFont]">
+          Top Collections
+        </h4>
+        <button
+          class="rounded-md bg-[#E82B2B] px-4 py-2 font-normal text-sm text-white transition duration-200 hover:bg-red-400 active:bg-gray-200">
+          See all
+        </button>
+      </div>
+      <div class="w-full bg-white overflow-x-scroll px-4 md:overflow-x-hidden">
+        <table role="table" class="w-full min-w-[900px] overflow-x-scroll font-[secondFont]">
+          <thead class="sticky top-0 bg-white">
+            <tr role="row">
+              <th colspan="1" role="columnheader" title="Toggle SortBy" style="cursor: pointer"
+                class="text-left lg:text-center">
+                <div
+                  class="text-black flex items-center justify-between pb-2 pt-4 uppercase tracking-wide text-sm lg:text-xs">
+                  Rank
+                </div>
+              </th>
+              <th colspan="1" role="columnheader" title="Toggle SortBy" style="cursor: pointer"
+                class="text-left lg:text-center">
+                <div class="flex items-center justify-between pb-2 pt-4 uppercase tracking-wide text-sm lg:text-xs">
+                  Name
+                </div>
+              </th>
+              <th colspan="1" role="columnheader" title="Toggle SortBy" style="cursor: pointer"
+                class="text-left lg:text-center">
+                <div class="flex items-center justify-between pb-2 pt-4 uppercase tracking-wide text-sm lg:text-xs">
+                  Floor Price
+                </div>
+              </th>
+              <th colspan="1" role="columnheader" title="Toggle SortBy" style="cursor: pointer"
+                class="text-left lg:text-center">
+                <div class="flex items-center justify-between pb-2 pt-4 uppercase tracking-wide text-sm lg:text-xs">
+                  Volume
+                </div>
+              </th>
+              <th colspan="1" role="columnheader" title="Toggle SortBy" style="cursor: pointer"
+                class="text-left lg:text-center">
+                <div
+                  class="text-black flex items-center justify-between pb-2 pt-4 uppercase tracking-wide text-sm lg:text-xs">
+                  Rank
+                </div>
+              </th>
+              <th colspan="1" role="columnheader" title="Toggle SortBy" style="cursor: pointer"
+                class="text-left lg:text-center">
+                <div class="flex items-center justify-between pb-2 pt-4 uppercase tracking-wide text-sm lg:text-xs">
+                  Name
+                </div>
+              </th>
+              <th colspan="1" role="columnheader" title="Toggle SortBy" style="cursor: pointer"
+                class="text-left lg:text-center">
+                <div class="flex items-center justify-between pb-2 pt-4 uppercase tracking-wide text-sm lg:text-xs">
+                  Floor Price
+                </div>
+              </th>
+              <th colspan="1" role="columnheader" title="Toggle SortBy" style="cursor: pointer"
+                class="text-left lg:text-center">
+                <div class="flex items-center justify-between pb-2 pt-4 uppercase tracking-wide text-sm lg:text-xs">
+                  Volume
+                </div>
+              </th>
+            </tr>
+          </thead>
+          <tbody role="rowgroup" class="px-4">
+            <tr role="row">
+              <td class="py-3 text-sm" role="cell">
+                <p class="text-md font-bold text-black">1</p>
+              </td>
+              <td class="py-3 text-sm" role="cell">
+                <div class="flex items-center gap-2">
+                  <div class="h-10 w-10 rounded-full">
+                    <img class="h-full w-full rounded-xl"
+                      src="https://i.seadn.io/s/raw/files/cea44fccf20c3baf5413d32c5dfe0aa3.jpg?auto=format&dpr=1&w=48"
+                      alt="" />
+                  </div>
+                  <p class="text-sm font-bold text-black">Frogs on Blast</p>
+                </div>
+              </td>
+              <td class="py-3 text-sm" role="cell">
+                <p class="text-md font-bold text-black">3.05 ETH</p>
+              </td>
+              <td class="py-3 text-sm" role="cell">
+                <p class="text-md font-bold text-black">5 ETH</p>
+              </td>
+              <td class="py-3 text-sm" role="cell">
+                <p class="text-md font-bold text-black">6</p>
+              </td>
+              <td class="py-3 text-sm" role="cell">
+                <div class="flex items-center gap-2">
+                  <div class="h-10 w-10 rounded-full">
+                    <img class="h-full w-full rounded-xl"
+                      src="https://i.seadn.io/s/raw/files/bab099ac828cf37a5137ec6ab41ce771.png?auto=format&dpr=1&w=256"
+                      alt="" />
+                  </div>
+                  <p class="text-sm font-bold text-black">Capt & Company</p>
+                </div>
+              </td>
+              <td class="py-3 text-sm" role="cell">
+                <p class="text-md font-bold text-black">4.05 ETH</p>
+              </td>
+              <td class="py-3 text-sm" role="cell">
+                <p class="text-md font-bold text-black">8 ETH</p>
+              </td>
+            </tr>
+            <tr role="row">
+              <td class="py-3 text-sm" role="cell">
+                <p class="text-md font-bold text-black">2</p>
+              </td>
+              <td class="py-3 text-sm" role="cell">
+                <div class="flex items-center gap-2">
+                  <div class="h-10 w-10 rounded-full">
+                    <img class="h-full w-full rounded-xl"
+                      src="https://i.seadn.io/gcs/files/6a0b776c9bb3973d1dd8d399353da9f5.gif?auto=format&dpr=1&w=128"
+                      alt="" />
+                  </div>
+                  <p class="text-sm font-bold text-black">Mocaverse</p>
+                </div>
+              </td>
+              <td class="py-3 text-sm" role="cell">
+                <p class="text-md font-bold text-black">6.05 ETH</p>
+              </td>
+              <td class="py-3 text-sm" role="cell">
+                <p class="text-md font-bold text-black">10 ETH</p>
+              </td>
+              <td class="py-3 text-sm" role="cell">
+                <p class="text-md font-bold text-black">7</p>
+              </td>
+              <td class="py-3 text-sm" role="cell">
+                <div class="flex items-center gap-2">
+                  <div class="h-10 w-10 rounded-full">
+                    <img class="h-full w-full rounded-xl"
+                      src="https://i.seadn.io/gae/0swIAR7eYBOYUnT-04tE1T8yHO3E3QnSu_Gih3Z97QCAnfqONteVJ23SPx8jF8hdKynkYJMDR3mjKu2gYxlVQ7pi1v0stO_jnDQl?auto=format&dpr=1&w=64"
+                      alt="" />
+                  </div>
+                  <p class="text-sm font-bold text-black">JukiVerse</p>
+                </div>
+              </td>
+              <td class="py-3 text-sm" role="cell">
+                <p class="text-md font-bold text-black">0.05 ETH</p>
+              </td>
+              <td class="py-3 text-sm" role="cell">
+                <p class="text-md font-bold text-black">1 ETH</p>
+              </td>
+            </tr>
+            <tr role="row">
+              <td class="py-3 text-sm" role="cell">
+                <p class="text-md font-bold text-black">3</p>
+              </td>
+              <td class="py-3 text-sm" role="cell">
+                <div class="flex items-center gap-2">
+                  <div class="h-10 w-10 rounded-full">
+                    <img class="h-full w-full rounded-xl"
+                      src="https://i.seadn.io/gae/_R4fuC4QGYd14-KwX2bD1wf-AWjDF2VMabfqWFJhIgiN2FnAUpnD5PLdJORrhQ8gly7KcjhQZZpuzYVPF7CDSzsqmDh97z84j2On?auto=format&dpr=1&w=128"
+                      alt="" />
+                  </div>
+                  <p class="text-sm font-bold text-black">Beanz Official</p>
+                </div>
+              </td>
+              <td class="py-3 text-sm" role="cell">
+                <p class="text-md font-bold text-black">0.5 ETH</p>
+              </td>
+              <td class="py-3 text-sm" role="cell">
+                <p class="text-md font-bold text-black">2 ETH</p>
+              </td>
+              <td class="py-3 text-sm" role="cell">
+                <p class="text-md font-bold text-black">8</p>
+              </td>
+              <td class="py-3 text-sm" role="cell">
+                <div class="flex items-center gap-2">
+                  <div class="h-10 w-10 rounded-full">
+                    <img class="h-full w-full rounded-xl"
+                      src="https://i.seadn.io/s/raw/files/d89029119ce1a096bc09e955513720a9.jpg?auto=format&dpr=1&w=384"
+                      alt="" />
+                  </div>
+                  <p class="text-sm font-bold text-black">Mindblowon Universe</p>
+                </div>
+              </td>
+              <td class="py-3 text-sm" role="cell">
+                <p class="text-md font-bold text-black">1 ETH</p>
+              </td>
+              <td class="py-3 text-sm" role="cell">
+                <p class="text-md font-bold text-black">5 ETH</p>
+              </td>
+            </tr>
+            <tr role="row">
+              <td class="py-3 text-sm" role="cell">
+                <p class="text-md font-bold text-black">4</p>
+              </td>
+              <td class="py-3 text-sm" role="cell">
+                <div class="flex items-center gap-2">
+                  <div class="h-10 w-10 rounded-full">
+                    <img class="h-full w-full rounded-xl"
+                      src="https://i.seadn.io/gae/VMG3VFncJG-pyqsRAwQznZGqYDw4RkPjJnJNJwrDERFhD4pWLh82q66JJ8Qh0vCPoovjoyigJwLqfFpa5tMAVV5ASIiR5nF1XkQFpec?auto=format&dpr=1&w=64"
+                      alt="" />
+                  </div>
+                  <p class="text-sm font-bold text-black">Karafuru</p>
+                </div>
+              </td>
+              <td class="py-3 text-sm" role="cell">
+                <p class="text-md font-bold text-black">0.05 ETH</p>
+              </td>
+              <td class="py-3 text-sm" role="cell">
+                <p class="text-md font-bold text-black">10 ETH</p>
+              </td>
+              <td class="py-3 text-sm" role="cell">
+                <p class="text-md font-bold text-black">9</p>
+              </td>
+              <td class="py-3 text-sm" role="cell">
+                <div class="flex items-center gap-2">
+                  <div class="h-10 w-10 rounded-full">
+                    <img class="h-full w-full rounded-xl"
+                      src="https://i.seadn.io/gcs/files/c0b7dfed5908126d92877c00470ee72a.png?auto=format&dpr=1&w=256"
+                      alt="" />
+                  </div>
+                  <p class="text-sm font-bold text-black">Lesogette</p>
+                </div>
+              </td>
+              <td class="py-3 text-sm" role="cell">
+                <p class="text-md font-bold text-black">3 ETH</p>
+              </td>
+              <td class="py-3 text-sm" role="cell">
+                <p class="text-md font-bold text-black">5 ETH</p>
+              </td>
+            </tr>
+            <tr role="row">
+              <td class="py-3 text-sm" role="cell">
+                <p class="text-md font-bold text-black">5</p>
+              </td>
+              <td class="py-3 text-sm" role="cell">
+                <div class="flex items-center gap-2">
+                  <div class="h-10 w-10 rounded-full">
+                    <img class="h-full w-full rounded-xl"
+                      src="https://i.seadn.io/gae/XN0XuD8Uh3jyRWNtPTFeXJg_ht8m5ofDx6aHklOiy4amhFuWUa0JaR6It49AH8tlnYS386Q0TW_-Lmedn0UET_ko1a3CbJGeu5iHMg?auto=format&dpr=1&w=48"
+                      alt="" />
+                  </div>
+                  <p class="text-sm font-bold text-black">CloneX</p>
+                </div>
+              </td>
+              <td class="py-3 text-sm" role="cell">
+                <p class="text-md font-bold text-black">6 ETH</p>
+              </td>
+              <td class="py-3 text-sm" role="cell">
+                <p class="text-md font-bold text-black">8.30 ETH</p>
+              </td>
+              <td class="py-3 text-sm" role="cell">
+                <p class="text-md font-bold text-black">10</p>
+              </td>
+              <td class="py-3 text-sm" role="cell">
+                <div class="flex items-center gap-2">
+                  <div class="h-10 w-10 rounded-full">
+                    <img class="h-full w-full rounded-xl"
+                      src="https://i.seadn.io/s/raw/files/c439cda4bd0be52504c788d607a9de58.gif?auto=format&dpr=1&w=128"
+                      alt="" />
+                  </div>
+                  <p class="text-sm font-bold text-black">Pudgy Penguin</p>
+                </div>
+              </td>
+              <td class="py-3 text-sm" role="cell">
+                <p class="text-md font-bold text-black">0.05 ETH</p>
+              </td>
+              <td class="py-3 text-sm" role="cell">
+                <p class="text-md font-bold text-black">10 ETH</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <hr class="w-48 h-1 mx-auto my-4 bg-black border-0 rounded md:my-10" />
+  <!-- RANKING VOLUME ENDED -->
+
+  <!-- NOTABLE COLLECTIONS SECTION STARTED -->
+  <div class="container swiper swiper2 lg:!w-[75%] bg-white md:!w-[100%]">
+    <div class="flex h-fit w-full sm:text-center items-center rounded-t-2xl bg-white px-4 pt-4">
+      <h4 class="mx-auto text-5xl font-semibold text-black font-[mainFont]">
+        Active NFT <span class="text-[#E82B2B]">Auctions</span>
+      </h4>
+    </div>
+
+    <div class="slide-container slide-container2 bg-white">
+      <div class="card-wrapper swiper-wrapper font-[secondFont]">
+        <div class="card swiper-slide card-swiper-slide md:!w-fit">
+          <div class="image-box">
+            <link rel="stylesheet"
+              href="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/css/main.ad49aa9b.css" />
+            <div class="flex flex-col justify-center items-center">
+              <div
+                class="!z-5 relative flex flex-col rounded-[20px] max-w-[300px] bg-white bg-clip-border shadow-3xl shadow-shadow-500 flex flex-col w-full !p-4 3xl:p-![18px] bg-white undefined">
+                <div class="h-full w-full">
+                  <div class="relative w-full">
+                    <img src="https://i.seadn.io/gcs/files/3e24c378e48370cb09409a38c6c47d0d.jpg?auto=format&dpr=1&w=384"
+                      class="mb-3 h-48 w-64 rounded-xl object-cover" alt="" />
+
+                    <button
+                      class="absolute top-3 right-3 flex items-center justify-center rounded-full bg-white p-2 text-brand-500 hover:cursor-pointer">
+                      <div class="flex h-full w-full items-center justify-center rounded-full text-xl hover:bg-gray-50">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                          height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                          <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+                            d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z">
+                          </path>
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                  <div class="mb-3 flex items-center justify-between px-1 md:items-start">
+                    <div class="mb-2">
+                      <p class="text-lg font-bold">Muso #911</p>
+                      <p class="mt-1 text-sm font-medium text-gray-600 md:mt-2">
+                        By Karafuru
+                      </p>
+                    </div>
+                    <div class="flex flex-row-reverse md:mt-2 lg:mt-0">
+                      <span
+                        class="z-0 ml-px inline-flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-[#E0E5F2] text-xs text-navy-700">+5</span><span
+                        class="z-10 -mr-3 h-8 w-8 rounded-full border-2 border-white">
+                        <img class="h-full w-full rounded-full object-cover"
+                          src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/avatar1.eeef2af6dfcd3ff23cb8.png"
+                          alt="" />
+                      </span>
+                      <span class="z-10 -mr-3 h-8 w-8 rounded-full border-2 border-white">
+                        <img class="h-full w-full rounded-full object-cover"
+                          src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/avatar2.5692c39db4f8c0ea999e.png"
+                          alt="" />
+                      </span>
+                      <span class="z-10 -mr-3 h-8 w-8 rounded-full border-2 border-white">
+                        <img class="h-full w-full rounded-full object-cover"
+                          src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/avatar3.9f646ac5920fa40adf00.png"
+                          alt="" />
+                      </span>
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-between md:items-center lg:justify-between">
+                    <div class="flex">
+                      <p class="!mb-0 text-sm font-bold text-[#E82B2B]">
+                        Current Bid: 10 <span>ETH</span>
+                      </p>
+                    </div>
+                    <button href=""
+                      class="linear rounded-[20px] px-4 py-2 text-base bg-[#E82B2B] font-medium text-white transition duration-200 hover:bg-[#e82b2beb] active:bg-red-400">
+                      Place Bid
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide card-swiper-slide md:!w-fit">
+          <div class="image-box">
+            <div class="flex flex-col justify-center items-center">
+              <div
+                class="!z-5 relative flex flex-col rounded-[20px] max-w-[300px] bg-white bg-clip-border shadow-3xl shadow-shadow-500 flex flex-col w-full !p-4 3xl:p-![18px] bg-white undefined">
+                <div class="h-full w-full">
+                  <div class="relative w-full">
+                    <img src="https://i.seadn.io/gcs/files/bfa2405dee68e8c368a430254819d9a9.png?auto=format&dpr=1&w=384"
+                      class="mb-3 h-48 w-64 rounded-xl object-cover" alt="" />
+
+                    <button
+                      class="absolute top-3 right-3 flex items-center justify-center rounded-full bg-white p-2 text-brand-500 hover:cursor-pointer">
+                      <div class="flex h-full w-full items-center justify-center rounded-full text-xl hover:bg-gray-50">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                          height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                          <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+                            d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z">
+                          </path>
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                  <div class="mb-3 flex items-center justify-between px-1 md:items-start">
+                    <div class="mb-2">
+                      <p class="text-lg font-bold">Bean #382</p>
+                      <p class="mt-1 text-sm font-medium text-gray-600 md:mt-2 flex items-center">
+                        By Beanz Official
+                        <ion-icon name="checkmark-circle" style="color: blue" class="ml-1"></ion-icon>
+                      </p>
+                    </div>
+                    <div class="flex flex-row-reverse md:mt-2 lg:mt-0">
+                      <span
+                        class="z-0 ml-px inline-flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-[#E0E5F2] text-xs text-navy-700">+2</span><span
+                        class="z-10 -mr-3 h-8 w-8 rounded-full border-2 border-white">
+                        <img class="h-full w-full rounded-full object-cover"
+                          src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/avatar1.eeef2af6dfcd3ff23cb8.png"
+                          alt="" />
+                      </span>
+                      <span class="z-10 -mr-3 h-8 w-8 rounded-full border-2 border-white">
+                        <img class="h-full w-full rounded-full object-cover"
+                          src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/avatar2.5692c39db4f8c0ea999e.png"
+                          alt="" />
+                      </span>
+                      <span class="z-10 -mr-3 h-8 w-8 rounded-full border-2 border-white">
+                        <img class="h-full w-full rounded-full object-cover"
+                          src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/avatar3.9f646ac5920fa40adf00.png"
+                          alt="" />
+                      </span>
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-between md:items-center lg:justify-between">
+                    <div class="flex">
+                      <p class="!mb-0 text-sm font-bold text-[#E82B2B]">
+                        Current Bid: 0.91 <span>ETH</span>
+                      </p>
+                    </div>
+                    <button href=""
+                      class="linear rounded-[20px] px-4 py-2 text-base bg-[#E82B2B] font-medium text-white transition duration-200 hover:bg-[#e82b2beb] active:bg-red-400">
+                      Place Bid
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide card-swiper-slide md:!w-fit">
+          <div class="image-box">
+            <div class="flex flex-col justify-center items-center">
+              <div
+                class="!z-5 relative flex flex-col rounded-[20px] max-w-[300px] bg-white bg-clip-border shadow-3xl shadow-shadow-500 flex flex-col w-full !p-4 3xl:p-![18px] bg-white undefined">
+                <div class="h-full w-full">
+                  <div class="relative w-full">
+                    <img
+                      src="https://i.seadn.io/s/raw/files/b51935dd278a1c33475e4d3748e1fc46.png?auto=format&dpr=1&w=384"
+                      class="mb-3 h-48 w-64 rounded-xl object-cover" alt="" />
+
+                    <button
+                      class="absolute top-3 right-3 flex items-center justify-center rounded-full bg-white p-2 text-brand-500 hover:cursor-pointer">
+                      <div class="flex h-full w-full items-center justify-center rounded-full text-xl hover:bg-gray-50">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                          height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                          <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+                            d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z">
+                          </path>
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                  <div class="mb-3 flex items-center justify-between px-1 md:items-start">
+                    <div class="mb-2">
+                      <p class="text-lg font-bold">Mutant Ape #329</p>
+                      <p class="mt-1 text-sm font-medium text-gray-600 md:mt-2 flex items-center">
+                        By Mutant Ape...
+                        <ion-icon name="checkmark-circle" style="color: blue" class="ml-1"></ion-icon>
+                      </p>
+                    </div>
+                    <div class="flex flex-row-reverse md:mt-2 lg:mt-0">
+                      <span
+                        class="z-0 ml-px inline-flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-[#E0E5F2] text-xs text-navy-700">+5</span><span
+                        class="z-10 -mr-3 h-8 w-8 rounded-full border-2 border-white">
+                        <img class="h-full w-full rounded-full object-cover"
+                          src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/avatar1.eeef2af6dfcd3ff23cb8.png"
+                          alt="" />
+                      </span>
+                      <span class="z-10 -mr-3 h-8 w-8 rounded-full border-2 border-white">
+                        <img class="h-full w-full rounded-full object-cover"
+                          src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/avatar2.5692c39db4f8c0ea999e.png"
+                          alt="" />
+                      </span>
+                      <span class="z-10 -mr-3 h-8 w-8 rounded-full border-2 border-white">
+                        <img class="h-full w-full rounded-full object-cover"
+                          src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/avatar3.9f646ac5920fa40adf00.png"
+                          alt="" />
+                      </span>
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-between md:items-center lg:justify-between">
+                    <div class="flex">
+                      <p class="!mb-0 text-sm font-bold text-[#E82B2B]">
+                        Current Bid: 20.5 <span>ETH</span>
+                      </p>
+                    </div>
+                    <button href=""
+                      class="linear rounded-[20px] px-4 py-2 text-base bg-[#E82B2B] font-medium text-white transition duration-200 hover:bg-[#e82b2beb] active:bg-red-400">
+                      Place Bid
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide card-swiper-slide md:!w-fit">
+          <div class="image-box">
+            <div class="flex flex-col justify-center items-center">
+              <div
+                class="!z-5 relative flex flex-col rounded-[20px] max-w-[300px] bg-white bg-clip-border shadow-3xl shadow-shadow-500 w-full !p-4 3xl:p-![18px] undefined">
+                <div class="h-full w-full">
+                  <div class="relative w-full">
+                    <img
+                      src="https://i.seadn.io/s/raw/files/925fe34e60c11e46b162e05053fb554b.gif?auto=format&dpr=1&w=384"
+                      class="mb-3 h-48 w-64 rounded-xl object-cover" alt="" />
+
+                    <button
+                      class="absolute top-3 right-3 flex items-center justify-center rounded-full bg-white p-2 text-brand-500 hover:cursor-pointer">
+                      <div class="flex h-full w-full items-center justify-center rounded-full text-xl hover:bg-gray-50">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                          height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                          <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+                            d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z">
+                          </path>
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                  <div class="mb-3 flex items-center justify-between px-1 md:items-start">
+                    <div class="mb-2">
+                      <p class="text-lg font-bold">Potatoz #84</p>
+                      <p class="mt-1 text-sm font-medium text-gray-600 md:mt-2">
+                        By Memeland Potatoz
+                      </p>
+                    </div>
+                    <div class="flex flex-row-reverse md:mt-2 lg:mt-0">
+                      <span
+                        class="z-0 ml-px inline-flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-[#E0E5F2] text-xs text-navy-700">+5</span><span
+                        class="z-10 -mr-3 h-8 w-8 rounded-full border-2 border-white">
+                        <img class="h-full w-full rounded-full object-cover"
+                          src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/avatar1.eeef2af6dfcd3ff23cb8.png"
+                          alt="" />
+                      </span>
+                      <span class="z-10 -mr-3 h-8 w-8 rounded-full border-2 border-white">
+                        <img class="h-full w-full rounded-full object-cover"
+                          src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/avatar2.5692c39db4f8c0ea999e.png"
+                          alt="" />
+                      </span>
+                      <span class="z-10 -mr-3 h-8 w-8 rounded-full border-2 border-white">
+                        <img class="h-full w-full rounded-full object-cover"
+                          src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/avatar3.9f646ac5920fa40adf00.png"
+                          alt="" />
+                      </span>
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-between md:items-center lg:justify-between">
+                    <div class="flex">
+                      <p class="!mb-0 text-sm font-bold text-[#E82B2B]">
+                        Current Bid: 5.91 <span>ETH</span>
+                      </p>
+                    </div>
+                    <button href=""
+                      class="linear rounded-[20px] px-4 py-2 text-base bg-[#E82B2B] font-medium text-white transition duration-200 hover:bg-[#e82b2beb] active:bg-red-400">
+                      Place Bid
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide card-swiper-slide md:!w-fit">
+          <div class="image-box">
+            <div class="flex flex-col justify-center items-center">
+              <div
+                class="!z-5 relative flex flex-col rounded-[20px] max-w-[300px] bg-white bg-clip-border shadow-3xl shadow-shadow-500 w-full !p-4 3xl:p-![18px] undefined">
+                <div class="h-full w-full">
+                  <div class="relative w-full">
+                    <img
+                      src="https://i.seadn.io/gae/zYYzzp73GpTBDrjPWryFw1jRXokMKwpbnIrwmn6bASwv_76ZmVyLC4ow7_A5P6VvZr3h4TUzvm3eBI1R-yYTzHu413GHladvaLp7TA?auto=format&dpr=1&w=384"
+                      class="mb-3 h-48 w-64 rounded-xl object-cover" alt="" />
+
+                    <button
+                      class="absolute top-3 right-3 flex items-center justify-center rounded-full bg-white p-2 text-brand-500 hover:cursor-pointer">
+                      <div class="flex h-full w-full items-center justify-center rounded-full text-xl hover:bg-gray-50">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                          height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                          <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+                            d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z">
+                          </path>
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                  <div class="mb-3 flex items-center justify-between px-1 md:items-start">
+                    <div class="mb-2">
+                      <p class="text-lg font-bold">Jukiverse #772</p>
+                      <p class="mt-1 text-sm font-medium text-gray-600 md:mt-2">
+                        By Jukiverse
+                      </p>
+                    </div>
+                    <div class="flex flex-row-reverse md:mt-2 lg:mt-0">
+                      <span
+                        class="z-0 ml-px inline-flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-[#E0E5F2] text-xs text-navy-700">+9</span><span
+                        class="z-10 -mr-3 h-8 w-8 rounded-full border-2 border-white">
+                        <img class="h-full w-full rounded-full object-cover"
+                          src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/avatar1.eeef2af6dfcd3ff23cb8.png"
+                          alt="" />
+                      </span>
+                      <span class="z-10 -mr-3 h-8 w-8 rounded-full border-2 border-white">
+                        <img class="h-full w-full rounded-full object-cover"
+                          src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/avatar2.5692c39db4f8c0ea999e.png"
+                          alt="" />
+                      </span>
+                      <span class="z-10 -mr-3 h-8 w-8 rounded-full border-2 border-white">
+                        <img class="h-full w-full rounded-full object-cover"
+                          src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/avatar3.9f646ac5920fa40adf00.png"
+                          alt="" />
+                      </span>
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-between md:items-center lg:justify-between">
+                    <div class="flex">
+                      <p class="!mb-0 text-sm font-bold text-[#E82B2B]">
+                        Current Bid: 0.05 <span>ETH</span>
+                      </p>
+                    </div>
+                    <button href=""
+                      class="linear rounded-[20px] px-4 py-2 text-base bg-[#E82B2B] font-medium text-white transition duration-200 hover:bg-[#e82b2beb] active:bg-red-400">
+                      Place Bid
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tranding-slider-control">
+      <div class="swiper-button-next swiper-navBtn swiper-button-next2 slider-arrow">
+        <ion-icon name="arrow-forward-circle" class="md:!hidden"></ion-icon>
+      </div>
+      <div class="swiper-button-prev swiper-navBtn swiper-button-prev2 slider-arrow">
+        <ion-icon name="arrow-back-circle" class="md:!hidden"></ion-icon>
+      </div>
+      <div class="swiper-pagination swiper-pagination2"></div>
+    </div>
+  </div>
+  <!-- NOTABLE COLLECTIONS SECTION STARTED -->
+
+  <!-- TRENDING IN PFP'S SECTION STARTED -->
+  <div class="container swiper swiper3 lg:!w-[75%] bg-white md:!w-[100%]">
+    <div class="flex h-fit w-full sm:text-center items-center rounded-t-2xl bg-white px-4 pt-4">
+      <h4 class="mx-auto text-5xl font-semibold text-black font-[mainFont]">
+        Notable <span class="text-[#E82B2B]">Collections</span>
+      </h4>
+    </div>
+
+    <div class="slide-container slide-container3 bg-white">
+      <div class="card-wrapper swiper-wrapper font-[secondFont]">
+        <div class="card swiper-slide card-swiper-slide md:!w-fit">
+          <div class="image-box">
+            <div class="flex justify-center items-center">
+              <div class="w- p-6 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
+                <img class="w-64 object-cover rounded-md"
+                  src="https://i.seadn.io/s/raw/files/23ad3af162bc3692943c33843391e030.jpg?auto=format&dpr=1&w=384"
+                  alt="" />
+                <div class="mt-4">
+                  <h1 class="text-2xl font-bold text-gray-700">8 Bit cat</h1>
+                  <div class="mt-4 mb-2 flex justify-between pr-2">
+                    <div class="flex-col">
+                      <p>Floor Price</p>
+                      <button class="block text-lg font-bold cursor-auto">
+                        0.05 ETH
+                      </button>
+                    </div>
+                    <div class="flex-col">
+                      <p>Total Volume</p>
+                      <button class="block text-lg font-bold cursor-auto">
+                        0.05 ETH
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide card-swiper-slide md:!w-fit">
+          <div class="image-box">
+            <div class="flex justify-center items-center">
+              <div class="w- p-6 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
+                <img class="w-64 object-cover rounded-t-md"
+                  src="https://i.seadn.io/s/raw/files/a9e0b936d4bf88ca1ae7051234ce82e0.png?auto=format&dpr=1&w=384"
+                  alt="" />
+                <div class="mt-4">
+                  <h1 class="text-2xl font-bold text-gray-700">MAPYC #322</h1>
+                  <div class="mt-4 mb-2 flex justify-between pr-2">
+                    <div class="flex-col">
+                      <p>Floor Price</p>
+                      <button class="block text-lg font-bold cursor-auto">
+                        10.05 ETH
+                      </button>
+                    </div>
+                    <div class="flex-col">
+                      <p>Total Volume</p>
+                      <button class="block text-lg font-bold cursor-auto">
+                        0.05 ETH
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide card-swiper-slide md:!w-fit">
+          <div class="image-box">
+            <div class="flex justify-center items-center">
+              <div class="w- p-6 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
+                <img class="w-64 object-cover rounded-md"
+                  src="https://i.seadn.io/gcs/files/c8f6191563fc30c66a43a444ba475072.png?auto=format&dpr=1&w=384"
+                  alt="" />
+                <div class="mt-4">
+                  <h1 class="text-2xl font-bold text-gray-700">CloneX #99</h1>
+                  <div class="mt-4 mb-2 flex justify-between pr-2">
+                    <div class="flex-col">
+                      <p>Floor Price</p>
+                      <button class="block text-lg font-bold cursor-auto">
+                        2.05 ETH
+                      </button>
+                    </div>
+                    <div class="flex-col">
+                      <p>Total Volume</p>
+                      <button class="block text-lg font-bold cursor-auto">
+                        5.15 ETH
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide card-swiper-slide md:!w-fit">
+          <div class="image-box">
+            <div class="flex justify-center items-center">
+              <div class="w- p-6 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
+                <img class="w-64 object-cover rounded-md"
+                  src="https://i.seadn.io/s/raw/files/565385d87385de3df8c70c7a97b3a45b.png?auto=format&dpr=1&w=384"
+                  alt="" />
+                <div class="mt-4">
+                  <h1 class="text-2xl font-bold text-gray-700">Mocaverse #55</h1>
+                  <div class="mt-4 mb-2 flex justify-between pr-2">
+                    <div class="flex-col">
+                      <p>Floor Price</p>
+                      <button class="block text-lg font-bold cursor-auto">
+                        8.70 ETH
+                      </button>
+                    </div>
+                    <div class="flex-col">
+                      <p>Total Volume</p>
+                      <button class="block text-lg font-bold cursor-auto">
+                        1.05 ETH
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide card-swiper-slide md:!w-fit">
+          <div class="image-box">
+            <div class="flex justify-center items-center">
+              <div class="w- p-6 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
+                <img class="w-64 object-cover rounded-md"
+                  src="https://i.seadn.io/s/raw/files/07dcc200961e7f3ace8f48a2abf30aed.png?auto=format&dpr=1&w=384"
+                  alt="" />
+                <div class="mt-4">
+                  <h1 class="text-2xl font-bold text-gray-700">Skellie #77</h1>
+                  <div class="mt-4 mb-2 flex justify-between pr-2">
+                    <div class="flex-col">
+                      <p>Floor Price</p>
+                      <button class="block text-lg font-bold cursor-auto">
+                        0.05 ETH
+                      </button>
+                    </div>
+                    <div class="flex-col">
+                      <p>Total Volume</p>
+                      <button class="block text-lg font-bold cursor-auto">
+                        0.05 ETH
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide card-swiper-slide md:!w-fit">
+          <div class="image-box">
+            <div class="flex justify-center items-center">
+              <div class="w- p-6 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
+                <img class="w-64 object-cover rounded-t-md"
+                  src="https://i.seadn.io/s/raw/files/77a1ee619df3d03bd4d9ca438c7e2f40.png?auto=format&dpr=1&w=384"
+                  alt="" />
+                <div class="mt-4">
+                  <h1 class="text-2xl font-bold text-gray-700">Frogs on Blast #55</h1>
+                  <div class="mt-4 mb-2 flex justify-between pr-2">
+                    <div class="flex-col">
+                      <p>Floor Price</p>
+                      <button class="block text-lg font-bold cursor-auto">
+                        7.05 ETH
+                      </button>
+                    </div>
+                    <div class="flex-col">
+                      <p>Total Volume</p>
+                      <button class="block text-lg font-bold cursor-auto">
+                        0.05 ETH
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tranding-slider-control">
+      <div class="swiper-button-next swiper-navBtn swiper-button-next3 slider-arrow">
+        <ion-icon name="arrow-forward-circle" class="md:!hidden"></ion-icon>
+      </div>
+      <div class="swiper-button-prev swiper-navBtn swiper-button-prev3 slider-arrow">
+        <ion-icon name="arrow-back-circle" class="md:!hidden"></ion-icon>
+      </div>
+      <div class="swiper-pagination swiper-pagination3"></div>
+    </div>
+  </div>
+  <!-- TRENDING IN PFP'S SECTION ENDED -->
+
+  <!-- RECENT TRANSACTION SECTION STARTED -->
+  <link rel="stylesheet"
+    href="https://horizon-tailwind-react-corporate-7s21b54hb-horizon-ui.vercel.app/static/css/main.d7f96858.css" />
+
+  <div class="font-[secondFont] flex flex-col justify-center items-center pt-4">
+    <div
+      class="relative flex flex-col items-center rounded-[10px] lg:!w-[75%] md:!w-full sm:!w-[100vh] mx-auto p-4 bg-white">
+      <div class="flex items-center justify-between rounded-t-3xl p-3 w-full">
+        <div class="lg:text-3xl md:text-3xl text-black font-semibold">
+          Recent Transaction
+        </div>
+        <button
+          class="linear rounded-[20px] bg-[#f6f6f6] px-4 py-2 font-medium transition duration-200 hover:bg-gray-100 active:bg-gray-200">
+          See all
+        </button>
+      </div>
+      <div
+        class="flex h-full w-full items-start justify-between rounded-md border-[1px] border-[transparent] dark:hover:border-white/20 bg-white px-3 py-[20px] transition-all duration-150 hover:border-gray-200 dark:!bg-navy-800 dark:hover:!bg-navy-700">
+        <div class="flex items-center gap-3">
+          <div class="flex h-16 w-16 items-center justify-center">
+            <img class="h-full w-full rounded-xl"
+              src="https://i.seadn.io/gcs/files/803a0d04686db801ed19f3d5c00329aa.jpg?auto=format&dpr=1&w=384"
+              alt="" />
+          </div>
+          <div class="flex flex-col">
+            <h5 class="text-base font-bold text-navy-700 dark:text-white">
+              Karafuru #92
+            </h5>
+            <p class="mt-1 text-sm font-normal text-gray-600">by 0x029904...</p>
+          </div>
+        </div>
+        <div class="mt-1 flex items-center justify-center text-navy-700 dark:text-white">
+          <div>
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1em"
+              width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z">
+              </path>
+            </svg>
+          </div>
+          <div class="ml-1 flex items-center text-sm font-bold text-navy-700 dark:text-white">
+            <p></p>
+            0.4
+            <p class="ml-1">ETH</p>
+          </div>
+          <div class="ml-2 flex items-center text-sm font-normal text-gray-600 dark:text-white">
+            <p>30s</p>
+            <p class="ml-1">ago</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex h-full w-full items-start justify-between rounded-md border-[1px] border-[transparent] dark:hover:border-white/20 bg-white px-3 py-[20px] transition-all duration-150 hover:border-gray-200 dark:!bg-navy-800 dark:hover:!bg-navy-700">
+        <div class="flex items-center gap-3">
+          <div class="flex h-16 w-16 items-center justify-center">
+            <img class="h-full w-full rounded-xl"
+              src="https://i.seadn.io/gae/aPZZZ9ww0tNq4UrqQcZro0UUQsSz_sVM0EaGYEEzJmngP4QNJM-MP4PRF1LOBCH56Ve7J9nXGUp9I6vaDIx3GsDzxZqy5SpfsDka0zs?auto=format&dpr=1&w=384"
+              alt="" />
+          </div>
+          <div class="flex flex-col">
+            <h5 class="text-base font-bold text-navy-700 dark:text-white">
+              Si Juki #22
+            </h5>
+            <p class="mt-1 text-sm font-normal text-gray-600">by 0x038004...</p>
+          </div>
+        </div>
+        <div class="mt-1 flex items-center justify-center text-navy-700 dark:text-white">
+          <div>
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1em"
+              width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z">
+              </path>
+            </svg>
+          </div>
+          <div class="ml-1 flex items-center text-sm font-bold text-navy-700 dark:text-white">
+            <p></p>
+            0.9
+            <p class="ml-1">ETH</p>
+          </div>
+          <div class="ml-2 flex items-center text-sm font-normal text-gray-600 dark:text-white">
+            <p>1min</p>
+            <p class="ml-1">ago</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex h-full w-full items-start justify-between rounded-md border-[1px] border-[transparent] dark:hover:border-white/20 bg-white px-3 py-[20px] transition-all duration-150 hover:border-gray-200 dark:!bg-navy-800 dark:hover:!bg-navy-700">
+        <div class="flex items-center gap-3">
+          <div class="flex h-16 w-16 items-center justify-center">
+            <img class="h-full w-full rounded-xl"
+              src="https://i.seadn.io/s/raw/files/cc338bd5998fa90e9c52c1f8309010e3.webp?auto=format&dpr=1&w=384"
+              alt="" />
+          </div>
+          <div class="flex flex-col">
+            <h5 class="text-base font-bold text-navy-700 dark:text-white">
+              Blast Penguin #766
+            </h5>
+            <p class="mt-1 text-sm font-normal text-gray-600">by 0x029904...</p>
+          </div>
+        </div>
+        <div class="mt-1 flex items-center justify-center text-navy-700 dark:text-white">
+          <div>
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1em"
+              width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z">
+              </path>
+            </svg>
+          </div>
+          <div class="ml-1 flex items-center text-sm font-bold text-navy-700 dark:text-white">
+            <p></p>
+            0.4
+            <p class="ml-1">ETH</p>
+          </div>
+          <div class="ml-2 flex items-center text-sm font-normal text-gray-600 dark:text-white">
+            <p>2hr</p>
+            <p class="ml-1">ago</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex h-full w-full items-start justify-between rounded-md border-[1px] border-[transparent] dark:hover:border-white/20 bg-white px-3 py-[20px] transition-all duration-150 hover:border-gray-200 dark:!bg-navy-800 dark:hover:!bg-navy-700">
+        <div class="flex items-center gap-3">
+          <div class="flex h-16 w-16 items-center justify-center">
+            <img class="h-full w-full rounded-xl"
+              src="https://i.seadn.io/s/raw/files/a55899ee3fa9fc6b73b75e024d3d009c.gif?auto=format&dpr=1&w=384"
+              alt="" />
+          </div>
+          <div class="flex flex-col">
+            <h5 class="text-base font-bold text-navy-700 dark:text-white">
+              Potatoz #88
+            </h5>
+            <p class="mt-1 text-sm font-normal text-gray-600">by 0x392504...</p>
+          </div>
+        </div>
+        <div class="mt-1 flex items-center justify-center text-navy-700 dark:text-white">
+          <div>
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1em"
+              width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z">
+              </path>
+            </svg>
+          </div>
+          <div class="ml-1 flex items-center text-sm font-bold text-navy-700 dark:text-white">
+            <p></p>
+            1
+            <p class="ml-1">ETH</p>
+          </div>
+          <div class="ml-2 flex items-center text-sm font-normal text-gray-600 dark:text-white">
+            <p>3hr</p>
+            <p class="ml-1">ago</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex h-full w-full items-start justify-between rounded-md border-[1px] border-[transparent] dark:hover:border-white/20 bg-white px-3 py-[20px] transition-all duration-150 hover:border-gray-200 dark:!bg-navy-800 dark:hover:!bg-navy-700">
+        <div class="flex items-center gap-3">
+          <div class="flex h-16 w-16 items-center justify-center">
+            <img class="h-full w-full rounded-xl"
+              src="https://i.seadn.io/s/raw/files/a937dea5c85abc2a42bea04081211145.gif?auto=format&dpr=1&w=384"
+              alt="" />
+          </div>
+          <div class="flex flex-col">
+            <h5 class="text-base font-bold text-navy-700 dark:text-white">
+              Potatoz #3256
+            </h5>
+            <p class="mt-1 text-sm font-normal text-gray-600">by 0x029904...</p>
+          </div>
+        </div>
+        <div class="mt-1 flex items-center justify-center text-navy-700 dark:text-white">
+          <div>
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1em"
+              width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z">
+              </path>
+            </svg>
+          </div>
+          <div class="ml-1 flex items-center text-sm font-bold text-navy-700 dark:text-white">
+            <p></p>
+            0.9
+            <p class="ml-1">ETH</p>
+          </div>
+          <div class="ml-2 flex items-center text-sm font-normal text-gray-600 dark:text-white">
+            <p>5hr</p>
+            <p class="ml-1">ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- RECENT TRANSACTION SECTION ENDED -->
+
+  <br />
+  <br />
+
+  <!-- FOOTER SECTION STARTED -->
+  <footer class="bg-white">
+    <div class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+        <div>
+          <div class="font-[mainFont] text-4xl">
+            <h1 class="text-[#E82B2B]">Nusantara NFT</h1>
+          </div>
+
+          <p class="mt-4 max-w-xs text-gray-500">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse non
+            cupiditate quae nam molestias.
+          </p>
+
+          <ul class="mt-8 flex gap-6">
+            <li>
+              <a href="#" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
+                <span class="sr-only">Facebook</span>
+
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
+                <span class="sr-only">Instagram</span>
+
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
+                <span class="sr-only">Twitter</span>
+
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
+                <span class="sr-only">GitHub</span>
+
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
+                <span class="sr-only">Dribbble</span>
+
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="grid grid-cols-4 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
+          <div>
+            <p class="font-medium text-gray-900">Services</p>
+
+            <ul class="mt-6 space-y-4 text-sm">
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                  1on1 Coaching
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                  Company Review
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                  Accounts Review
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                  HR Consulting
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                  SEO Optimisation
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="font-medium text-gray-900">Company</p>
+
+            <ul class="mt-6 space-y-4 text-sm">
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                  About
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                  Meet the Team
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                  Accounts Review
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="font-medium text-gray-900">Helpful Links</p>
+
+            <ul class="mt-6 space-y-4 text-sm">
+              <li>
+                <a href="/dist/page/contact/index.html" class="text-gray-700 transition hover:opacity-75">
+                  Contact
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                  FAQs
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                  Live Chat
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="font-medium text-gray-900">Legal</p>
+
+            <ul class="mt-6 space-y-4 text-sm">
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                  Accessibility
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                  Returns Policy
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                  Refund Policy
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                  Hiring Statistics
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-xs text-gray-500">
+        &copy; 2022. Company Name. All rights reserved.
+      </p>
+    </div>
+  </footer>
+  <!-- FOOTER SECTION ENDED -->
+
+  <!-- IONICONS JAVASCRIPT STARTED -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <!-- IONICONS JAVASCRIPT ENDED -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  <script src="jquery.js"></script>
+  <script src="swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>z
+  <script src="/src/script.js"></script>
+  <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
+</body>
+
+</html>

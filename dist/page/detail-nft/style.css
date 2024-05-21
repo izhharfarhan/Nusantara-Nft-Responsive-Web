@@ -1,0 +1,37 @@
+.pay-button {
+  background-color: #f1f1f1 !important;
+}
+
+.pay-button:hover {
+  background-color: #d7d7d7b9 !important;
+}
+
+.pay-with-bitcoin {
+  background-color: #ff9119 !important;
+}
+.pay-with-bitcoin:hover {
+  background-color: #ff9019b1 !important;
+}
+
+.make-offer {
+  background-color: #050708 !important;
+}
+
+.make-offer:hover {
+  background-color: #050708bb !important;
+}
+
+.table-offers {
+  overflow-y: auto !important;
+  overflow-x: auto !important;
+  max-height: 21rem;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: black !important;
+}
+
+.breadcrumb:hover {
+  color: #e82b2b !important;
+}

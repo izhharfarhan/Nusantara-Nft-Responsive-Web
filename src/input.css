@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: mainFont;
+  src: url(fonts/Jersey10-Regular.ttf);
+}
+
+@font-face {
+  font-family: secondFont;
+  src: url(fonts/Poppins/Poppins-Regular.ttf);
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  font-family: mainFont;
+  font-size: 40px;
+}
+
+.connect-to-wallet {
+  background: #e82b2b !important;
+}
+
+.connect-to-wallet:hover {
+  background-color: #e82b2bd0 !important;
+}
+
+/* .title {
+  font-size: 90px;
+} */
+
+.marquee-container {
+  display: flex;
+  width: 100%;
+  overflow-x: auto; /* Memungkinkan scrolling horizontal jika konten terlalu lebar */
+  -webkit-overflow-scrolling: touch; /* Peningkatan performa scrolling untuk perangkat berbasis WebKit (misalnya, Safari, Chrome) */
+  scrollbar-width: none; /* Menghilangkan scrollbar pada perangkat non-WebKit */
+  -ms-overflow-style: none; /* Menghilangkan scrollbar pada perangkat non-WebKit */
+}
+
+.marquee {
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-170%);
+  }
+}
+
+.slide-container {
+  max-width: 1080px;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.slide-content {
+  /* padding: 0 10px; */
+  /* background-color: pink; */
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.card {
+  border-radius: 25px;
+  border: none !important;
+  /* background-color: #dae7db; */
+}
+
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 14px;
+}
+
+.card-image {
+  height: fit-content;
+}
+
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+}
+
+.soda-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #202020;
+}
+
+.description {
+  font-size: 14px;
+  font-weight: 600;
+  color: #3b3b3b;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-nav-btn {
+  color: #e82b2b !important;
+  transition: all 0.2s ease;
+}
+
+.swiper-nav-btn:hover {
+  color: #e82b2bc5;
+}
+
+.swiper-nav-btn::before,
+.swiper-nav-btn::after {
+  font-size: 40px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #e82b2b !important;
+  opacity: 50%;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #e82b2b !important;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content {
+    margin: 0 10px;
+  }
+
+  .swiper-nav-btn {
+    display: none;
+  }
+}
+
+.categories-search {
+  background-color: #e82b2b !important;
+}
+
+.search-icon {
+  background-color: #e82b2b !important;
+}
+
+@media screen and (max-width: 768px) {
+  .search-bar {
+    display: flex !important;
+    justify-content: center;
+  }
+}
+
+.swiper-button-next2,
+.swiper-button-prev2, .swiper-button-next3,
+.swiper-button-prev3 {
+  color: black !important;
+}
+
+.tranding-slider-control {
+  align-items: center;
+  justify-content: center;
+}
+
+.tranding-slider-control .slider-arrow ion-icon {
+  font-size: 1.5rem;
+}
+.tranding-slider-control .slider-arrow::after {
+  content: '';
+}

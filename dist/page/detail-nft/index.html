@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Details-Nusantara NFT</title>
+  <link rel="stylesheet" href="/dist/output.css" />
+  <link rel="stylesheet" href="/src/input.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/dist/swiper-bundle.min.css" />
+  <link rel="stylesheet"
+    href="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/css/main.ad49aa9b.css" />
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+
+<body>
+  <!-- NAVBAR SECTION STARTED -->
+  <header class="bg-white sticky top-0 z-50">
+    <nav class="relative px-4 py-4 flex justify-between items-center bg-[#1f1d1b]">
+      <a class="text-2xl" href="#">
+        <h1 class="logo text-[#E82B2B]">Nusantara NFT</h1>
+      </a>
+      <ul>
+        <div class="flex items-center">
+          <a class="mr-auto text-2xl" href="#">
+            <h1 class="logo text-[#E82B2B]">Nusantara NFT</h1>
+          </a>
+        </div>
+        <li class="mb-1">
+          <a class="block p-4 text-sm font-semibold text-black hover:bg-blue-50 hover:text-[#E82B2B] rounded"
+            href="/dist/index.html">Home</a>
+        </li>
+        <li class="mb-1">
+          <a class="block p-4 text-sm font-semibold text-black hover:bg-blue-50 hover:text-[#E82B2B] rounded"
+            href="#">Ranking</a>
+        </li>
+        <li class="mb-1">
+          <a class="block p-4 text-sm font-semibold text-black hover:bg-blue-50 hover:text-[#E82B2B] rounded"
+            href="#">Collections</a>
+        </li>
+        <li class="mb-8">
+          <a class="block p-4 text-sm font-semibold text-black hover:bg-blue-50 hover:text-[#E82B2B] rounded"
+            href="#">Trending</a>
+        </li>
+        <div class="mt-20">
+          <div class="pt-6">
+            <a type="button" data-modal-target="crypto-modal" data-modal-toggle="crypto-modal"
+              class="connect-to-wallet block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-[#E82B2B] hover:bg-[#e82b2bd0] rounded-xl"
+              href="#">Connect to Wallet</a>
+          </div>
+          <p class="my-4 text-xs text-center text-gray-400">
+            <span>Copyright © 2024</span>
+          </p>
+        </div>
+      </ul>
+
+      <div class="">
+        <!-- untuk membuat Hamburger Menu-->
+        <div for="menu-toggle" class="menu-toggle flex items-center">
+          <input id="menu-toggle" type="checkbox">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CONNECT TO YOUR WALLET MODAL SECTION STARTED -->
+    <div id="crypto-modal" tabindex="-1" aria-hidden="true"
+      class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+      <div class="relative p-4 w-full max-w-md max-h-full">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+          <!-- Modal header -->
+          <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+              Connect wallet
+            </h3>
+            <button type="button"
+              class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm h-8 w-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+              data-modal-toggle="crypto-modal">
+              <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 14 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+              </svg>
+              <span class="sr-only">Close modal</span>
+            </button>
+          </div>
+          <!-- Modal body -->
+          <div class="p-4 md:p-5">
+            <p class="text-sm font-normal text-gray-500 dark:text-gray-400">
+              Connect with one of our available wallet providers or create a new
+              one.
+            </p>
+            <ul class="my-4 space-y-3">
+              <li>
+                <a href="#"
+                  class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                  <svg aria-hidden="true" class="h-4" viewBox="0 0 40 38" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M39.0728 0L21.9092 12.6999L25.1009 5.21543L39.0728 0Z" fill="#E17726" />
+                    <path d="M0.966797 0.0151367L14.9013 5.21656L17.932 12.7992L0.966797 0.0151367Z" fill="#E27625" />
+                    <path d="M32.1656 27.0093L39.7516 27.1537L37.1004 36.1603L27.8438 33.6116L32.1656 27.0093Z"
+                      fill="#E27625" />
+                    <path d="M7.83409 27.0093L12.1399 33.6116L2.89876 36.1604L0.263672 27.1537L7.83409 27.0093Z"
+                      fill="#E27625" />
+                    <path
+                      d="M17.5203 10.8677L17.8304 20.8807L8.55371 20.4587L11.1924 16.4778L11.2258 16.4394L17.5203 10.8677Z"
+                      fill="#E27625" />
+                    <path
+                      d="M22.3831 10.7559L28.7737 16.4397L28.8067 16.4778L31.4455 20.4586L22.1709 20.8806L22.3831 10.7559Z"
+                      fill="#E27625" />
+                    <path d="M12.4115 27.0381L17.4768 30.9848L11.5928 33.8257L12.4115 27.0381Z" fill="#E27625" />
+                    <path d="M27.5893 27.0376L28.391 33.8258L22.5234 30.9847L27.5893 27.0376Z" fill="#E27625" />
+                    <path d="M22.6523 30.6128L28.6066 33.4959L23.0679 36.1282L23.1255 34.3884L22.6523 30.6128Z"
+                      fill="#D5BFB2" />
+                    <path d="M17.3458 30.6143L16.8913 34.3601L16.9286 36.1263L11.377 33.4961L17.3458 30.6143Z"
+                      fill="#D5BFB2" />
+                    <path d="M15.6263 22.1875L17.1822 25.4575L11.8848 23.9057L15.6263 22.1875Z" fill="#233447" />
+                    <path d="M24.3739 22.1875L28.133 23.9053L22.8184 25.4567L24.3739 22.1875Z" fill="#233447" />
+                    <path d="M12.8169 27.0049L11.9606 34.0423L7.37109 27.1587L12.8169 27.0049Z" fill="#CC6228" />
+                    <path d="M27.1836 27.0049L32.6296 27.1587L28.0228 34.0425L27.1836 27.0049Z" fill="#CC6228" />
+                    <path
+                      d="M31.5799 20.0605L27.6165 24.0998L24.5608 22.7034L23.0978 25.779L22.1387 20.4901L31.5799 20.0605Z"
+                      fill="#CC6228" />
+                    <path
+                      d="M8.41797 20.0605L17.8608 20.4902L16.9017 25.779L15.4384 22.7038L12.3988 24.0999L8.41797 20.0605Z"
+                      fill="#CC6228" />
+                    <path d="M8.15039 19.2314L12.6345 23.7816L12.7899 28.2736L8.15039 19.2314Z" fill="#E27525" />
+                    <path d="M31.8538 19.2236L27.2061 28.2819L27.381 23.7819L31.8538 19.2236Z" fill="#E27525" />
+                    <path
+                      d="M17.6412 19.5088L17.8217 20.6447L18.2676 23.4745L17.9809 32.166L16.6254 25.1841L16.625 25.1119L17.6412 19.5088Z"
+                      fill="#E27525" />
+                    <path
+                      d="M22.3562 19.4932L23.3751 25.1119L23.3747 25.1841L22.0158 32.1835L21.962 30.4328L21.75 23.4231L22.3562 19.4932Z"
+                      fill="#E27525" />
+                    <path
+                      d="M27.7797 23.6011L27.628 27.5039L22.8977 31.1894L21.9414 30.5138L23.0133 24.9926L27.7797 23.6011Z"
+                      fill="#F5841F" />
+                    <path
+                      d="M12.2373 23.6011L16.9873 24.9926L18.0591 30.5137L17.1029 31.1893L12.3723 27.5035L12.2373 23.6011Z"
+                      fill="#F5841F" />
+                    <path
+                      d="M10.4717 32.6338L16.5236 35.5013L16.4979 34.2768L17.0043 33.8323H22.994L23.5187 34.2753L23.48 35.4989L29.4935 32.641L26.5673 35.0591L23.0289 37.4894H16.9558L13.4197 35.0492L10.4717 32.6338Z"
+                      fill="#C0AC9D" />
+                    <path
+                      d="M22.2191 30.231L23.0748 30.8354L23.5763 34.8361L22.8506 34.2234H17.1513L16.4395 34.8485L16.9244 30.8357L17.7804 30.231H22.2191Z"
+                      fill="#161616" />
+                    <path
+                      d="M37.9395 0.351562L39.9998 6.53242L38.7131 12.7819L39.6293 13.4887L38.3895 14.4346L39.3213 15.1542L38.0875 16.2779L38.8449 16.8264L36.8347 19.1742L28.5894 16.7735L28.5179 16.7352L22.5762 11.723L37.9395 0.351562Z"
+                      fill="#763E1A" />
+                    <path
+                      d="M2.06031 0.351562L17.4237 11.723L11.4819 16.7352L11.4105 16.7735L3.16512 19.1742L1.15488 16.8264L1.91176 16.2783L0.678517 15.1542L1.60852 14.4354L0.350209 13.4868L1.30098 12.7795L0 6.53265L2.06031 0.351562Z"
+                      fill="#763E1A" />
+                    <path
+                      d="M28.1861 16.2485L36.9226 18.7921L39.7609 27.5398L32.2728 27.5398L27.1133 27.6049L30.8655 20.2912L28.1861 16.2485Z"
+                      fill="#F5841F" />
+                    <path
+                      d="M11.8139 16.2485L9.13399 20.2912L12.8867 27.6049L7.72971 27.5398H0.254883L3.07728 18.7922L11.8139 16.2485Z"
+                      fill="#F5841F" />
+                    <path
+                      d="M25.5283 5.17383L23.0847 11.7736L22.5661 20.6894L22.3677 23.4839L22.352 30.6225H17.6471L17.6318 23.4973L17.4327 20.6869L16.9139 11.7736L14.4707 5.17383H25.5283Z"
+                      fill="#F5841F" />
+                  </svg>
+                  <span class="flex-1 ms-3 whitespace-nowrap">MetaMask</span>
+                  <span
+                    class="inline-flex items-center justify-center px-2 py-0.5 ms-3 text-xs font-medium text-gray-500 bg-gray-200 rounded dark:bg-gray-700 dark:text-gray-400">Popular</span>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                  <svg aria-hidden="true" class="h-5" viewBox="0 0 292 292" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M145.7 291.66C226.146 291.66 291.36 226.446 291.36 146C291.36 65.5541 226.146 0.339844 145.7 0.339844C65.2542 0.339844 0.0400391 65.5541 0.0400391 146C0.0400391 226.446 65.2542 291.66 145.7 291.66Z"
+                      fill="#3259A5" />
+                    <path
+                      d="M195.94 155.5C191.49 179.08 170.8 196.91 145.93 196.91C117.81 196.91 95.0204 174.12 95.0204 146C95.0204 117.88 117.81 95.0897 145.93 95.0897C170.8 95.0897 191.49 112.93 195.94 136.5H247.31C242.52 84.7197 198.96 44.1797 145.93 44.1797C89.6904 44.1797 44.1104 89.7697 44.1104 146C44.1104 202.24 89.7004 247.82 145.93 247.82C198.96 247.82 242.52 207.28 247.31 155.5H195.94Z"
+                      fill="white" />
+                  </svg>
+                  <span class="flex-1 ms-3 whitespace-nowrap">Coinbase Wallet</span>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                  <svg aria-hidden="true" svg class="h-5" viewBox="0 0 75.591 75.591" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <linearGradient id="a" gradientTransform="matrix(0 -54.944 -54.944 0 23.62 79.474)"
+                      gradientUnits="userSpaceOnUse" x2="1">
+                      <stop offset="0" stop-color="#ff1b2d" />
+                      <stop offset=".3" stop-color="#ff1b2d" />
+                      <stop offset=".614" stop-color="#ff1b2d" />
+                      <stop offset="1" stop-color="#a70014" />
+                    </linearGradient>
+                    <linearGradient id="b" gradientTransform="matrix(0 -48.595 -48.595 0 37.854 76.235)"
+                      gradientUnits="userSpaceOnUse" x2="1">
+                      <stop offset="0" stop-color="#9c0000" />
+                      <stop offset=".7" stop-color="#ff4b4b" />
+                      <stop offset="1" stop-color="#ff4b4b" />
+                    </linearGradient>
+                    <g transform="matrix(1.3333 0 0 -1.3333 0 107.2)">
+                      <path
+                        d="m28.346 80.398c-15.655 0-28.346-12.691-28.346-28.346 0-15.202 11.968-27.609 26.996-28.313.44848-.02115.89766-.03314 1.3504-.03314 7.2574 0 13.876 2.7289 18.891 7.2137-3.3227-2.2036-7.2074-3.4715-11.359-3.4715-6.7504 0-12.796 3.3488-16.862 8.6297-3.1344 3.6999-5.1645 9.1691-5.3028 15.307v1.3349c.13821 6.1377 2.1683 11.608 5.302 15.307 4.0666 5.2809 10.112 8.6297 16.862 8.6297 4.1526 0 8.038-1.2679 11.361-3.4729-4.9904 4.4643-11.569 7.1876-18.786 7.2144-.03596 0-.07122.0014-.10718.0014z"
+                        fill="url(#a)" />
+                      <path
+                        d="m19.016 68.025c2.6013 3.0709 5.9607 4.9227 9.631 4.9227 8.2524 0 14.941-9.356 14.941-20.897s-6.6891-20.897-14.941-20.897c-3.6703 0-7.0297 1.851-9.6303 4.922 4.0659-5.2809 10.111-8.6297 16.862-8.6297 4.1519 0 8.0366 1.2679 11.359 3.4715 5.802 5.1906 9.4554 12.735 9.4554 21.133 0 8.397-3.6527 15.941-9.4533 21.131-3.3234 2.205-7.2088 3.4729-11.361 3.4729-6.7504 0-12.796-3.3488-16.862-8.6297"
+                        fill="url(#b)" />
+                    </g>
+                  </svg>
+                  <span class="flex-1 ms-3 whitespace-nowrap">Opera Wallet</span>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                  <svg aria-hidden="true" class="h-5" viewBox="0 0 512 512" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs>
+                      <radialGradient cx="0%" cy="50%" fx="0%" fy="50%" r="100%" id="radialGradient-1">
+                        <stop stop-color="#5D9DF6" offset="0%"></stop>
+                        <stop stop-color="#006FFF" offset="100%"></stop>
+                      </radialGradient>
+                    </defs>
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="logo">
+                        <rect id="base" fill="url(#radialGradient-1)" x="0" y="0" width="512" height="512" rx="256">
+                        </rect>
+                        <path
+                          d="M169.209772,184.531136 C217.142772,137.600733 294.857519,137.600733 342.790517,184.531136 L348.559331,190.179285 C350.955981,192.525805 350.955981,196.330266 348.559331,198.676787 L328.82537,217.99798 C327.627045,219.171241 325.684176,219.171241 324.485851,217.99798 L316.547278,210.225455 C283.10802,177.485633 228.89227,177.485633 195.453011,210.225455 L186.951456,218.549188 C185.75313,219.722448 183.810261,219.722448 182.611937,218.549188 L162.877976,199.227995 C160.481326,196.881474 160.481326,193.077013 162.877976,190.730493 L169.209772,184.531136 Z M383.602212,224.489406 L401.165475,241.685365 C403.562113,244.031874 403.562127,247.836312 401.165506,250.182837 L321.971538,327.721548 C319.574905,330.068086 315.689168,330.068112 313.292501,327.721609 C313.292491,327.721599 313.29248,327.721588 313.29247,327.721578 L257.08541,272.690097 C256.486248,272.103467 255.514813,272.103467 254.915651,272.690097 C254.915647,272.690101 254.915644,272.690105 254.91564,272.690108 L198.709777,327.721548 C196.313151,330.068092 192.427413,330.068131 190.030739,327.721634 C190.030725,327.72162 190.03071,327.721606 190.030695,327.721591 L110.834524,250.181849 C108.437875,247.835329 108.437875,244.030868 110.834524,241.684348 L128.397819,224.488418 C130.794468,222.141898 134.680206,222.141898 137.076856,224.488418 L193.284734,279.520668 C193.883897,280.107298 194.85533,280.107298 195.454493,279.520668 C195.454502,279.520659 195.45451,279.520651 195.454519,279.520644 L251.65958,224.488418 C254.056175,222.141844 257.941913,222.141756 260.338618,224.488222 C260.338651,224.488255 260.338684,224.488288 260.338717,224.488321 L316.546521,279.520644 C317.145683,280.107273 318.117118,280.107273 318.71628,279.520644 L374.923175,224.489406 C377.319825,222.142885 381.205562,222.142885 383.602212,224.489406 Z"
+                          id="WalletConnect" fill="#FFFFFF" fill-rule="nonzero"></path>
+                      </g>
+                    </g>
+                  </svg>
+                  <span class="flex-1 ms-3 whitespace-nowrap">WalletConnect</span>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                  <svg aria-hidden="true" class="h-4" viewBox="0 0 96 96" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M72.0998 0.600098H48.3998H24.5998H0.799805V24.4001V48.2001V49.7001V71.8001V71.9001V95.5001H24.5998V72.0001V71.9001V49.8001V48.3001V24.5001H48.3998H72.1998H95.9998V0.700104H72.0998V0.600098Z"
+                      fill="#617BFF" />
+                    <path
+                      d="M48.5 71.8002H72.1V95.6002H73C79.1 95.6002 84.9 93.2002 89.2 88.9002C93.5 84.6002 95.9 78.8002 95.9 72.7002V48.2002H48.5V71.8002Z"
+                      fill="#617BFF" />
+                  </svg>
+                  <span class="flex-1 ms-3 whitespace-nowrap">Fortmatic</span>
+                </a>
+              </li>
+            </ul>
+            <div>
+              <a href="#"
+                class="inline-flex items-center text-xs font-normal text-gray-500 hover:underline dark:text-gray-400">
+                <svg class="w-3 h-3 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 20 20">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M7.529 7.988a2.502 2.502 0 0 1 5 .191A2.441 2.441 0 0 1 10 10.582V12m-.01 3.008H10M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+                Why do I need to connect with my wallet?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CONNECT TO YOUR WALLET MODAL SECTION ENDED -->
+  </header>
+
+  <!-- NAVBAR SECTION ENDED -->
+  <main class="flex flex-wrap justify-center bg-gray-900">
+    <!-- Konten artikel -->
+    <div id="content" class="w-full md:w-3/4 p-3">
+      <article class="nft content-card rounded-lg text-white bg-gray-200 pb-3">
+        <header class="flex justify-between h-0 w-full items-center bg-elevation-1 p-3 font-medium">
+          <div class="flex items-center">
+            <div class="flex items-center">
+              <div class="flex mr-1">
+                <button
+                  class="inline-flex items-center border-0 bg-inherit font-[inherit] text-[100%] sc-52181046-0 crHeih"
+                  type="button" data-id="UnstyledButton" aria-label="Base logo">
+                  <svg fill="white" viewBox="0 0 111 111" xmlns="http://www.w3.org/2000/svg"
+                    style="width: 20px; height: 20px;">
+                    <path
+                      d="M54.921 110.034C85.359 110.034 110.034 85.402 110.034 55.017C110.034 24.6319 85.359 0 54.921 0C26.0432 0 2.35281 22.1714 0 50.3923H72.8467V59.6416H3.9565e-07C2.35281 87.8625 26.0432 110.034 54.921 110.034Z"
+                      fill="black"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flex ml-auto mr-2 items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black"
+              class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+            </svg>
+
+          </div>
+          <div class="flex items-center">
+            <p class="text-xs leading-xs font-semibold text-secondary pr-2" data-id="TextBody">
+            <div class="flex flex-col justify-center ml-1 text-black mr-2">3</div>
+            </p>
+            <div class="flex">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black"
+                class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+              </svg>
+            </div>
+          </div>
+        </header>
+
+        <figure class="text-center">
+          <img
+            src="https://i.seadn.io/gae/7eG1ARDkspDwD0amAWC5kcMlnJakHsopLIfde1rF1Ksxm52F5IGI6vXqOTreOdePI9KPo4dBC5GFwRxkmkp2JdMHCN7waOU8qpr9Ww?auto=format&dpr=1&w=384"
+            class="w-64 mx-auto rounded-md" alt="Penyusun Gambar">
+        </figure>
+      </article>
+
+      <section class="item--desc mt-3">
+        <div class="mx-auto bg-gray-200 rounded-xl shadow-md overflow-hidden"
+          style="padding: 20px; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+          <div class="Panel--alwaysOpen Panel--isOpen Panel--isFramed item--description-panel sc-31790e4e-0 FHtKk"
+            data-testid="Panel">
+            <div class="Panel--panel sc-45c68a3a-3 hFgFWd">
+              <div class="flex items-center border-b border-gray-300 pb-3 mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+                </svg>
+                <h3 class="text-md leading-md font-semibold ml-4" data-id="TextBody">Description</h3>
+              </div>
+              <div aria-labelledby="Header assets-item-description"
+                class="Panel--body sc-beff130f-0 sc-45c68a3a-1 hksMfk CeZjf border-b border-gray-300"
+                id="Body assets-item-description" role="region">
+                <div class="Panel--content-container" style="height: initial; max-height: 200px; overflow: auto;">
+                  <div class="item--description Panel--isContentPadded">
+                    <section class="item--creator">
+                      <div class="media-greaterThanOrEqual-md">
+                        <div class="flex items-center">
+                          <span class="text-md leading-md" data-id="TextBody">By&nbsp;</span>
+                          <span class="sc-beff130f-0 hksMfk" aria-expanded="false">
+                            <a class="no-underline cursor-pointer text-interactive-primary hover:text-interactive-primary-hover disabled:pointer-events-none disabled:opacity-40"
+                              aria-disabled="false" href="/castercats/created">
+                              <span class="text-md leading-md font-semibold sc-b6bd9c33-0 hjUKXf"
+                                data-id="TextBody">Gaspack-Deployer</span>
+                            </a>
+                          </span>
+                        </div>
+                      </div>
+                    </section>
+                    <div class="flex flex-col item--description-text">
+                      <div class="[&amp;>*:mt-0]">
+                        <div class="sc-b700f7f0-0 dOpGyH">
+                          <p class="text-md leading-md sc-95bc8448-0 kPeqty text-inherit whitespace-pre-wrap mb-4"
+                            data-id="TextBody">The Jukiverse is a world for 3456 Jukis to come together and embark on an
+                            adventure together. We are Jukis and the adventure has begun.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="info-box mx-auto bg-gray-200 shadow-md overflow-hidden"
+          style="padding-left: 20px; padding-right: 20px;">
+          <div class="info-tittle flex border-b border-gray-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+            </svg>
+            <h3 class="text-md leading-md font-semibold ml-4 mb-4" data-id="TextBody">Traits</h3>
+          </div>
+          <div class="info-content border-b border-gray-300">
+            <div class="container mx-auto px-1" style="padding-top: 10px; padding-bottom: 10px;">
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                <!-- Kotak 1 -->
+                <div class="box bg-white rounded-xl shadow-md overflow-hidden">
+                  <!-- Konten kotak -->
+                  <div class="p-4">
+                    <div class="text-xs leading-xs font-semibold uppercase text-secondary text-center">
+                      <div class="tabindex=" -1">Background</div>
+                    </div>
+                    <div class="flex items-center justify-center">
+                      <div class="text-sm leading-sm font-semibold max-w-[70%] py-1" data-testid="Property--value">
+                        <div class="tabindex=" -1">Tosca</div>
+                      </div>
+                      <span class="text-sm leading-sm flex-none pl-1 text-secondary">11%</span>
+                    </div>
+                    <div class="text-sm leading-sm text-secondary">
+                      <div class="tabindex=" -1">Floor: <span class="text-sm leading-sm text-secondary"><span>0.008
+                          </span><span>ETH</span></span></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Kotak 2 -->
+                <div class="box bg-white rounded-xl shadow-md overflow-hidden">
+                  <!-- Konten kotak -->
+                  <div class="p-4">
+                    <div class="text-xs leading-xs font-semibold uppercase text-secondary text-center">
+                      <div class="tabindex=" -1">Bag</div>
+                    </div>
+                    <div class="flex items-center justify-center">
+                      <div class="text-sm leading-sm font-semibold max-w-[70%] py-1" data-testid="Property--value">
+                        <div class="tabindex=" -1">Tosca</div>
+                      </div>
+                      <span class="text-sm leading-sm flex-none pl-1 text-secondary">0.98%</span>
+                    </div>
+                    <div class="text-sm leading-sm text-secondary">
+                      <div class="tabindex=" -1">Floor: <span class="text-sm leading-sm text-secondary"><span>0.063
+                          </span><span>ETH</span></span></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Kotak 3 -->
+                <div class="box bg-white rounded-xl shadow-md overflow-hidden">
+                  <!-- Konten kotak -->
+                  <div class="p-4">
+                    <div class="text-xs leading-xs font-semibold uppercase text-secondary text-center">
+                      <div class="tabindex=" -1">Background</div>
+                    </div>
+                    <div class="flex items-center justify-center">
+                      <div class="text-sm leading-sm font-semibold max-w-[70%] py-1" data-testid="Property--value">
+                        <div class="tabindex=" -1">Arc</div>
+                      </div>
+                      <span class="text-sm leading-sm flex-none pl-1 text-secondary">100%</span>
+                    </div>
+                    <div class="text-sm leading-sm text-secondary">
+                      <div class="tabindex=" -1">Floor: <span class="text-sm leading-sm text-secondary"><span>0.02
+                          </span><span>ETH</span></span></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Kotak 4 -->
+                <div class="box bg-white rounded-xl shadow-md overflow-hidden">
+                  <!-- Konten kotak -->
+                  <div class="p-4">
+                    <div class="text-xs leading-xs font-semibold uppercase text-secondary text-center">
+                      <div class="tabindex=" -1">Background</div>
+                    </div>
+                    <div class="flex items-center justify-center">
+                      <div class="text-sm leading-sm font-semibold max-w-[70%] py-1" data-testid="Property--value">
+                        <div class="tabindex=" -1">Arc</div>
+                      </div>
+                      <span class="text-sm leading-sm flex-none pl-1 text-secondary">100%</span>
+                    </div>
+                    <div class="text-sm leading-sm text-secondary">
+                      <div class="tabindex=" -1">Floor: <span class="text-sm leading-sm text-secondary"><span>0.02
+                          </span><span>ETH</span></span></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Kotak 5 -->
+                <div class="box bg-white rounded-xl shadow-md overflow-hidden">
+                  <!-- Konten kotak -->
+                  <div class="p-4">
+                    <div class="text-xs leading-xs font-semibold uppercase text-secondary text-center">
+                      <div class="tabindex=" -1">Background</div>
+                    </div>
+                    <div class="flex items-center justify-center">
+                      <div class="text-sm leading-sm font-semibold max-w-[70%] py-1" data-testid="Property--value">
+                        <div class="tabindex=" -1">Arc</div>
+                      </div>
+                      <span class="text-sm leading-sm flex-none pl-1 text-secondary">100%</span>
+                    </div>
+                    <div class="text-sm leading-sm text-secondary">
+                      <div class="tabindex=" -1">Floor: <span class="text-sm leading-sm text-secondary"><span>0.02
+                          </span><span>ETH</span></span></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Kotak 6 -->
+                <div class="box bg-white rounded-xl shadow-md overflow-hidden">
+                  <!-- Konten kotak -->
+                  <div class="p-4">
+                    <div class="text-xs leading-xs font-semibold uppercase text-secondary text-center">
+                      <div class="tabindex=" -1">Background</div>
+                    </div>
+                    <div class="flex items-center justify-center">
+                      <div class="text-sm leading-sm font-semibold max-w-[70%] py-1" data-testid="Property--value">
+                        <div class="tabindex=" -1">Arc</div>
+                      </div>
+                      <span class="text-sm leading-sm flex-none pl-1 text-secondary">100%</span>
+                    </div>
+                    <div class="text-sm leading-sm text-secondary">
+                      <div class="tabindex=" -1">Floor: <span class="text-sm leading-sm text-secondary"><span>0.02
+                          </span><span>ETH</span></span></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Kotak 7 -->
+                <div class="box bg-white rounded-xl shadow-md overflow-hidden">
+                  <!-- Konten kotak -->
+                  <div class="p-4">
+                    <div class="text-xs leading-xs font-semibold uppercase text-secondary text-center">
+                      <div class="tabindex=" -1">Background</div>
+                    </div>
+                    <div class="flex items-center justify-center">
+                      <div class="text-sm leading-sm font-semibold max-w-[70%] py-1" data-testid="Property--value">
+                        <div class="tabindex=" -1">Arc</div>
+                      </div>
+                      <span class="text-sm leading-sm flex-none pl-1 text-secondary">100%</span>
+                    </div>
+                    <div class="text-sm leading-sm text-secondary">
+                      <div class="tabindex=" -1">Floor: <span class="text-sm leading-sm text-secondary"><span>0.02
+                          </span><span>ETH</span></span></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Kotak 8 -->
+                <div class="box bg-white rounded-xl shadow-md overflow-hidden">
+                  <!-- Konten kotak -->
+                  <div class="p-4">
+                    <div class="text-xs leading-xs font-semibold uppercase text-secondary text-center">
+                      <div class="tabindex=" -1">Background</div>
+                    </div>
+                    <div class="flex items-center justify-center">
+                      <div class="text-sm leading-sm font-semibold max-w-[70%] py-1" data-testid="Property--value">
+                        <div class="tabindex=" -1">Arc</div>
+                      </div>
+                      <span class="text-sm leading-sm flex-none pl-1 text-secondary">100%</span>
+                    </div>
+                    <div class="text-sm leading-sm text-secondary">
+                      <div class="tabindex=" -1">Floor: <span class="text-sm leading-sm text-secondary"><span>0.02
+                          </span><span>ETH</span></span></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Kotak 9 -->
+                <div class="box bg-white rounded-xl shadow-md overflow-hidden">
+                  <!-- Konten kotak -->
+                  <div class="p-4">
+                    <div class="text-xs leading-xs font-semibold uppercase text-secondary text-center">
+                      <div class="tabindex=" -1">Background</div>
+                    </div>
+                    <div class="flex items-center justify-center">
+                      <div class="text-sm leading-sm font-semibold max-w-[70%] py-1" data-testid="Property--value">
+                        <div class="tabindex=" -1">Arc</div>
+                      </div>
+                      <span class="text-sm leading-sm flex-none pl-1 text-secondary">100%</span>
+                    </div>
+                    <div class="text-sm leading-sm text-secondary">
+                      <div class="tabindex=" -1">Floor: <span class="text-sm leading-sm text-secondary"><span>0.02
+                          </span><span>ETH</span></span></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Kotak 10 -->
+                <div class="box bg-white rounded-xl shadow-md overflow-hidden">
+                  <!-- Konten kotak -->
+                  <div class="p-4">
+                    <div class="text-xs leading-xs font-semibold uppercase text-secondary text-center">
+                      <div class="tabindex=" -1">Background</div>
+                    </div>
+                    <div class="flex items-center justify-center">
+                      <div class="text-sm leading-sm font-semibold max-w-[70%] py-1" data-testid="Property--value">
+                        <div class="tabindex=" -1">Arc</div>
+                      </div>
+                      <span class="text-sm leading-sm flex-none pl-1 text-secondary">100%</span>
+                    </div>
+                    <div class="text-sm leading-sm text-secondary">
+                      <div class="tabindex=" -1">Floor: <span class="text-sm leading-sm text-secondary"><span>0.02
+                          </span><span>ETH</span></span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="info-box mx-auto bg-gray-200 shadow-md overflow-hidden" style="padding: 20px;">
+          <div class="info-tittle2 flex border-b border-gray-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 0 1 0 3.75H5.625a1.875 1.875 0 0 1 0-3.75Z" />
+            </svg>
+            <h3 class="text-md leading-md font-semibold ml-4 mb-4" data-id="TextBody">About Si Juki : Lost in Jukiverse
+            </h3>
+          </div>
+          <div class="info-content2 p-4 border-b border-gray-300">
+            <div aria-labelledby="Header assets-item-about-collection"
+              class="Panel--body sc-beff130f-0 sc-45c68a3a-1 hksMfk CeZjf" id="Body assets-item-about-collection"
+              role="region">
+              <div class="Panel--content-container" style="height: initial;">
+                <div class="Panel--isContentPadded">
+                  <div class="item--about-container">
+                    <div class="flex items-start">
+                      <div class="flex sc-d712da22-2 eOUUfP">
+                        <a class="no-underline cursor-pointer text-interactive-primary hover:text-interactive-primary-hover disabled:pointer-events-none disabled:opacity-40"
+                          href="/collection/castercats">
+                          <span
+                            style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;">
+                            <span
+                              style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;">
+                              <img alt="" aria-hidden="true"
+                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2780%27%20height=%2780%27/%3e"
+                                style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;">
+                            </span>
+                            <img alt="Si Juki: Lost in Jukiverse collection image"
+                              srcset="https://i.seadn.io/gae/0swIAR7eYBOYUnT-04tE1T8yHO3E3QnSu_Gih3Z97QCAnfqONteVJ23SPx8jF8hdKynkYJMDR3mjKu2gYxlVQ7pi1v0stO_jnDQl?auto=format&amp;dpr=1&amp;w=128 1x, https://i.seadn.io/gae/0swIAR7eYBOYUnT-04tE1T8yHO3E3QnSu_Gih3Z97QCAnfqONteVJ23SPx8jF8hdKynkYJMDR3mjKu2gYxlVQ7pi1v0stO_jnDQl?auto=format&amp;dpr=1&amp;w=256 2x"
+                              src="https://i.seadn.io/gae/0swIAR7eYBOYUnT-04tE1T8yHO3E3QnSu_Gih3Z97QCAnfqONteVJ23SPx8jF8hdKynkYJMDR3mjKu2gYxlVQ7pi1v0stO_jnDQl?auto=format&amp;dpr=1&amp;w=256"
+                              decoding="async" data-nimg="intrinsic" class="sc-d712da22-1 gbWvUg"
+                              style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;">
+                          </span>
+                        </a>
+                      </div>
+                      <div class="flex flex-col ml-4">
+                        <div class="[&amp;>*:mt-0]">
+                          <div class="sc-b700f7f0-0 dOpGyH">
+                            <p class="text-md leading-md mb-1.5 lg:mb-3 last:mb-0 whitespace-pre-wrap w-fit markdown-line"
+                              node="[object Object]" data-id="TextBody" style="text-align: justify;">
+                              Jukiverse is 3456 Jukis based on Indonesia comic character, Si Juki. Si Juki created and
+                              authored by Faza Meonk since 2010. Jukiverse is a bridge for IP Brand development from
+                              Web2 to Web3.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="info-box bg-gray-200 shadow-md overflow-hidden"
+          style="padding-left: 20px; padding-left: 20px; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
+          <div class="info-tittle3 flex">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Zm6-10.125a1.875 1.875 0 1 1-3.75 0 1.875 1.875 0 0 1 3.75 0Zm1.294 6.336a6.721 6.721 0 0 1-3.17.789 6.721 6.721 0 0 1-3.168-.789 3.376 3.376 0 0 1 6.338 0Z" />
+            </svg>
+            <h3 class="text-md leading-md font-semibold ml-4 mb-4" data-id="TextBody">Details</h3>
+          </div>
+          <div class="info-content3 p-4" style="border-top: 1px solid #ccc;">
+            <div class="sc-beff130f-0 hksMfk">
+              <div class="flex justify-between mt-2">Contract Address<span
+                  class="text-sm leading-sm sc-6454d681-0 bcNVND" data-id="TextBody"><a
+                    class="no-underline cursor-pointer text-interactive-primary hover:text-interactive-primary-hover disabled:pointer-events-none disabled:opacity-40"
+                    href="https://etherscan.io/address/0xf023ea03291313ad31c22db0f682228040af4d86"
+                    rel="nofollow noopener" target="_blank">0xf023...4d86</a></span></div>
+              <div class="flex justify-between mt-2">Token ID<span class="text-sm leading-sm sc-6454d681-0 bcNVND"
+                  data-id="TextBody"><a
+                    class="no-underline cursor-pointer text-interactive-primary hover:text-interactive-primary-hover disabled:pointer-events-none disabled:opacity-40"
+                    href="http://metadata.jukiverse.com/373" rel="nofollow noopener" target="_blank">373</a></span>
+              </div>
+              <div class="flex justify-between mt-2">Token Standard<span class="text-sm leading-sm sc-6454d681-0 bcNVND"
+                  data-id="TextBody">ERC-721</span></div>
+              <div class="flex justify-between mt-2">Chain<span class="text-sm leading-sm sc-6454d681-0 bcNVND"
+                  data-id="TextBody">Ethereum</span></div>
+              <div class="flex justify-between mt-2">
+                <div class="flex items-center">
+                  <div class="sc-beff130f-0 hksMfk mr-2">Creator Earnings</div>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+                  </svg>
+
+                </div>
+                <span class="text-sm leading-sm sc-6454d681-0 bcNVND" data-id="TextBody">5%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+        <!-- Konten samping -->
+        <aside class="w-full md:w-1/4 p-3">
+            <div class="item--aside">
+                <section class="item--header">
+                    <div class="item--collection-info flex justify-between">
+                        <div class="item--collection-detail">
+                            <div class="flex flex-col">
+                                <div class="creator flex">
+                                  <a href="/dist/page/profile-seller/index.html">
+                                    <h1 class="font-bold mr-2">Si Juki : Lost in Jukiverse</h1>
+                                  </a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="blue" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item--collection-toolbar-wrapper">
+                            <div class="flex space-x-4">
+                                <span>
+                                    <a class="no-underline cursor-pointer text-interactive-primary hover:text-interactive-primary-hover disabled:pointer-events-none disabled:opacity-40"
+                                        aria-disabled="false">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
+                                        </svg>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a class="no-underline cursor-pointer text-interactive-primary hover:text-interactive-primary-hover disabled:pointer-events-none disabled:opacity-40"
+                                        aria-disabled="false">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M9 8.25H7.5a2.25 2.25 0 0 0-2.25 2.25v9a2.25 2.25 0 0 0 2.25 2.25h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25H15m0-3-3-3m0 0-3 3m3-3V15" />
+                                        </svg>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a class="no-underline cursor-pointer text-interactive-primary hover:text-interactive-primary-hover disabled:pointer-events-none disabled:opacity-40"
+                                        aria-disabled="false">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                        </svg>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="flex items-center">
+                        <h1 class="sc-beff130f-0 kZpcNQ item--title font-bold" title="Caster Cats #3099"
+                            style="font-size: 35px;">JukiVerse #3099</h1>
+                    </div>
+                    <div class="sc-beff130f-0 iNoSgt">
+                        <div class="sc-beff130f-0 sc-b6bd9c33-1 inTdOL eXpLtk AccountLink--ellipsis-overflow">
+                            <h1>Owned by <span class="font-bold">kristin001</span></h1>
+                        </div>
+                    </div>
+                </section>
+                <br/>
+                <br/>
+                <section class="item--counts flex">
+                    <div class="flex justify-between" style="margin-right: 30px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" style="margin-right: 5px;">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5-3.9 19.5m-2.1-19.5-3.9 19.5" />
+                        </svg>
+                        <p style="margin-left: 5px;">2534</p>
+                    </div>
+                    <div class="flex justify-between" style="margin-right: 30px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" style="margin-right: 5px;">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        </svg>                          
+                        <p style="margin-left: 5px;">300</p>
+                    </div>
+                    <div class="flex justify-between" style="margin-right: 30px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" style="margin-right: 5px;">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                        </svg>                          
+                        <p style="margin-left: 5px;">258</p>
+                    </div>
+                    <div class="flex justify-between" style="margin-right: 30px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" style="margin-right: 5px;">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 0 1-1.125-1.125v-3.75ZM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-8.25ZM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-2.25Z" />
+                        </svg>                          
+                        <p style="margin-left: 5px;">PFPs</p>
+                    </div>
+                </section>
+                <br/>
+                <div class="mx-auto bg-gray-200 rounded-xl shadow-md overflow-hidden" style="padding: 20px;">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center">
+                            <div class="flex">
+                                <div class="text-md leading-md">
+                                    <span class="text-black">Sale ends</span>&nbsp;
+                                    <span class="text-black">April 28, 2024 at 3:18 PM</span>&nbsp;
+                                    <span class="text-primary"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap">
+                            <div class="Timer--time-unit mr-4">
+                                <div class="Timer--numbers text-red-500">00</div>
+                                <span class="text-sm leading-sm text-black">Hours</span>
+                            </div>
+                            <div class="Timer--time-unit mx-4">
+                                <div class="Timer--numbers text-red-500">04</div>
+                                <span class="text-sm leading-sm text-black">Minutes</span>
+                            </div>
+                            <div class="Timer--time-unit ml-4">
+                                <div class="Timer--numbers text-red-500">51</div>
+                                <span class="text-sm leading-sm text-black">Seconds</span>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="mt-6">
+                            <span class="text-sm leading-sm text-secondary">Current price</span>
+                            <div class="TradeStation--price-container mt-1 flex">
+                                <div class="Price--main TradeStation--price flex items-center">
+                                    <div class="Price--amount font-bold text-3xl" tabindex="-1">0.02 ETH</div>
+                                </div>
+                                <div class="TradeStation--fiat-price ml-4 flex items-center">
+                                    <div class="Price--fiat-amount Price--fiat-amount-secondary align-baseline" tabindex="-1">$66.40</div>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="flex justify-between mt-4">
+                            <div class="flex-grow mr-2">
+                                <button type="button" class="inline-flex items-center justify-center w-full whitespace-nowrap transition duration-200 text-md leading-md font-semibold bg-blue-500 text-white hover:bg-blue-600 gap-3 rounded-xl px-6 py-3 disabled:pointer-events-none disabled:opacity-40">
+                                    Buy now
+                                </button>
+                            </div>
+                            <div class="flex-grow ml-2">
+                                <button type="button" class="inline-flex items-center justify-center w-full whitespace-nowrap transition duration-200 text-md leading-md font-semibold bg-black text-white hover:bg-gray-900 gap-3 rounded-xl px-6 py-3 disabled:pointer-events-none disabled:opacity-40">
+                                    Make offer
+                                </button>
+                            </div>                                                       
+                        </div>
+                    </div>
+                </div>
+                <div class="info-box mx-auto bg-gray-200 shadow-md overflow-hidden mt-3" style="padding-left: 20px; padding-right: 20px; padding-top: 20px; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
+                    <div class="info-tittle4 flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" />
+                        </svg>
+                        <h3 class="text-md leading-md font-semibold ml-4 mb-8" data-id="TextBody">Price History</h3>
+                    </div>
+                    <div class="info-content4 p-4" style="border-top: 1px solid #ccc;">
+                        <div id="chart-container" class="h-96 overflow-x-auto"></div>
+                    </div>
+                </div>
+                <div class="info-box mx-auto bg-gray-200 shadow-md overflow-hidden mt-3" style="padding-left: 20px; padding-right: 20px; padding-top: 20px; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
+                    <div class="info-tittle5 flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 0 0 3 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 0 0 5.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 0 0 9.568 3Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6Z" />
+                          </svg>                          
+                        <h3 class="text-md leading-md font-semibold ml-4 mb-8" data-id="TextBody">Listing</h3>
+                    </div>
+                    <div>
+                        <div class="Panel--content-container" style="height: initial;">
+                            <div class="info-content5 p-4">
+                                <div class="flex flex-col mb-4">
+                                    <div class="w-full overflow-x-auto  rounded-md">
+                                      <table class="w-full text-left border-collapse">
+                                        <thead>
+                                          <tr class="text-xs font-medium text-gray-500 bg-gray-100 uppercase border-b border-gray-200">
+                                            <th class="px-4 py-2">Price</th>
+                                            <th class="px-4 py-2">USD Price</th>
+                                            <th class="px-4 py-2">Quantity</th>
+                                            <th class="px-4 py-2">Expiration</th>
+                                            <th class="px-4 py-2">From</th>
+                                            <th class="px-4 py-2"></th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr class="text-sm font-medium border-b border-gray-200 hover:bg-gray-100">
+                                            <td class="px-4 py-2">0.008 ETH</td>
+                                            <td class="px-4 py-2">$25.79</td>
+                                            <td class="px-4 py-2">1</td>
+                                            <td class="px-4 py-2">in 4 months</td>
+                                            <td class="px-4 py-2">BrandNewDraco99</td>
+                                            <td class="px-4 py-2">
+                                              <button type="button" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-500 rounded-lg hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 disabled:bg-gray-400 disabled:opacity-50">
+                                                Buy
+                                              </button>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+                <div class="info-box mx-auto bg-gray-200 shadow-md overflow-hidden mt-3" style="padding-left: 20px; padding-right: 20px; padding-top: 20px; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
+                    <div class="info-tittle6 flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0ZM3.75 12h.007v.008H3.75V12Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm-.375 5.25h.007v.008H3.75v-.008Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                          </svg>                                                   
+                        <h3 class="text-md leading-md font-semibold ml-4 mb-8" data-id="TextBody">Offers</h3>
+                    </div>
+                    <div>
+                        <div class="Panel--content-container" style="height: initial;">
+                            <div class="info-content6 p-4" style="display: flex; flex-direction: column; align-items: center;">
+                                <img src="https://opensea.io/static/images/empty-bids.svg" alt="">
+                                <h3 class="text-md leading-md font-semibold mt-4" data-id="TextBody">No offers yet</h3>
+                            </div>
+                        </div>                                               
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+    </div>
+    <div class="content-bawah" style="margin-left: 35px; margin-right: 35px;">
+        <div class="info-box mx-auto bg-gray-200 shadow-md overflow-hidden" style="padding-left: 20px; padding-right: 20px; padding-top: 20px; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
+            <div class="info-tittle7 flex">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5 7.5 3m0 0L12 7.5M7.5 3v13.5m13.5 0L16.5 21m0 0L12 16.5m4.5 4.5V7.5" />
+              </svg>                                       
+                <h3 class="text-md leading-md font-semibold ml-4 mb-8" data-id="TextBody">Item Activity</h3>
+            </div>
+            <div>
+                <div class="Panel--content-container" style="height: initial;">
+                    <div class="info-content7 p-4">
+                        <div class="flex flex-col mb-4 overflow-x-auto">
+                            <table class="w-full text-left border-collapse">
+                                <thead>
+                                    <tr class="text-xs font-medium text-gray-500 bg-gray-100 uppercase border-b border-gray-200">
+                                        <th class="px-4 py-2">Event</th>
+                                        <th class="px-4 py-2">Price</th>
+                                        <th class="px-4 py-2">From</th>
+                                        <th class="px-4 py-2">To</th>
+                                        <th class="px-4 py-2">Date</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                            <div class="w-full overflow-x-auto overflow-y-auto rounded-md" style="max-height: 190px;"> <!-- Sesuaikan nilai max-height sesuai kebutuhan -->
+                                <table class="w-full text-left border-collapse">
+                                    <tbody>
+                                        <tr class="text-sm font-medium border-b border-gray-200 hover:bg-gray-100">
+                                          <td class="px-4 py-2">List</td>
+                                          <td class="px-4 py-2">0.008 ETH</td>
+                                          <td class="px-4 py-2">BrandNewDraco99</td>
+                                          <td class="px-4 py-2"></td>
+                                          <td class="px-4 py-2">2mo ago</td>
+                                        </tr>
+                                        <tr class="text-sm font-medium border-b border-gray-200 hover:bg-gray-100">
+                                          <td class="px-4 py-2">List</td>
+                                          <td class="px-4 py-2">0.0091 ETH</td>
+                                          <td class="px-4 py-2">BrandNewDraco99</td>
+                                          <td class="px-4 py-2"></td>
+                                          <td class="px-4 py-2">4mo ago</td>
+                                        </tr>
+                                        <tr class="text-sm font-medium border-b border-gray-200 hover:bg-gray-100">
+                                          <td class="px-4 py-2">List</td>
+                                          <td class="px-4 py-2">0.100 ETH</td>
+                                          <td class="px-4 py-2">BrandNewDraco99</td>
+                                          <td class="px-4 py-2"></td>
+                                          <td class="px-4 py-2">1y ago</td>
+                                        </tr>
+                                        <tr class="text-sm font-medium border-b border-gray-200 hover:bg-gray-100">
+                                          <td class="px-4 py-2">Transfer</td>
+                                          <td class="px-4 py-2"></td>
+                                          <td class="px-4 py-2">ProsperBow11</td>
+                                          <td class="px-4 py-2">BrandNewDraco99</td>
+                                          <td class="px-4 py-2">1y ago</td>
+                                        </tr>
+                                        <tr class="text-sm font-medium border-b border-gray-200 hover:bg-gray-100">
+                                          <td class="px-4 py-2">Transfer</td>
+                                          <td class="px-4 py-2"></td>
+                                          <td class="px-4 py-2">ProsperBow11</td>
+                                          <td class="px-4 py-2">BrandNewDraco99</td>
+                                          <td class="px-4 py-2">1y ago</td>
+                                        </tr>
+                                        <tr class="text-sm font-medium border-b border-gray-200 hover:bg-gray-100">
+                                          <td class="px-4 py-2">List</td>
+                                          <td class="px-4 py-2">0.235 ETH</td>
+                                          <td class="px-4 py-2">ProsperBow11</td>
+                                          <td class="px-4 py-2"></td>
+                                          <td class="px-4 py-2">2y ago</td>
+                                        </tr>
+                                      </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <br/>
+    <!-- TRENDING IN PFP'S SECTION STARTED -->
+  <div class="container swiper swiper3 lg:!w-[75%] bg-white md:!w-[100%]">
+    <div class="flex h-fit w-full sm:text-center items-center rounded-t-2xl bg-white px-4 pt-4">
+      <h4 class="mx-auto text-5xl font-semibold text-black font-[mainFont]">
+        Notable <span class="text-[#E82B2B]">Collections</span>
+      </h4>
+    </div>
+
+    <div class="slide-container slide-container3 bg-white">
+      <div class="card-wrapper swiper-wrapper font-[secondFont]">
+        <div class="card swiper-slide card-swiper-slide md:!w-fit">
+          <div class="image-box">
+            <div class="flex justify-center items-center">
+              <div class="w- p-6 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
+                <img class="w-64 object-cover rounded-md"
+                  src="https://i.seadn.io/s/raw/files/23ad3af162bc3692943c33843391e030.jpg?auto=format&dpr=1&w=384"
+                  alt="" />
+                <div class="mt-4">
+                  <h1 class="text-2xl font-bold text-gray-700">8 Bit cat</h1>
+                  <div class="mt-4 mb-2 flex justify-between pr-2">
+                    <div class="flex-col">
+                      <p>Floor Price</p>
+                      <button class="block text-lg font-bold cursor-auto">
+                        0.05 ETH
+                      </button>
+                    </div>
+                    <div class="flex-col">
+                      <p>Total Volume</p>
+                      <button class="block text-lg font-bold cursor-auto">
+                        0.05 ETH
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide card-swiper-slide md:!w-fit">
+          <div class="image-box">
+            <div class="flex justify-center items-center">
+              <div class="w- p-6 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
+                <img class="w-64 object-cover rounded-t-md"
+                  src="https://i.seadn.io/s/raw/files/a9e0b936d4bf88ca1ae7051234ce82e0.png?auto=format&dpr=1&w=384"
+                  alt="" />
+                <div class="mt-4">
+                  <h1 class="text-2xl font-bold text-gray-700">MAPYC #322</h1>
+                  <div class="mt-4 mb-2 flex justify-between pr-2">
+                    <div class="flex-col">
+                      <p>Floor Price</p>
+                      <button class="block text-lg font-bold cursor-auto">
+                        10.05 ETH
+                      </button>
+                    </div>
+                    <div class="flex-col">
+                      <p>Total Volume</p>
+                      <button class="block text-lg font-bold cursor-auto">
+                        0.05 ETH
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide card-swiper-slide md:!w-fit">
+          <div class="image-box">
+            <div class="flex justify-center items-center">
+              <div class="w- p-6 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
+                <img class="w-64 object-cover rounded-md"
+                  src="https://i.seadn.io/gcs/files/c8f6191563fc30c66a43a444ba475072.png?auto=format&dpr=1&w=384"
+                  alt="" />
+                <div class="mt-4">
+                  <h1 class="text-2xl font-bold text-gray-700">CloneX #99</h1>
+                  <div class="mt-4 mb-2 flex justify-between pr-2">
+                    <div class="flex-col">
+                      <p>Floor Price</p>
+                      <button class="block text-lg font-bold cursor-auto">
+                        2.05 ETH
+                      </button>
+                    </div>
+                    <div class="flex-col">
+                      <p>Total Volume</p>
+                      <button class="block text-lg font-bold cursor-auto">
+                        5.15 ETH
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide card-swiper-slide md:!w-fit">
+          <div class="image-box">
+            <div class="flex justify-center items-center">
+              <div class="w- p-6 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
+                <img class="w-64 object-cover rounded-md"
+                  src="https://i.seadn.io/s/raw/files/565385d87385de3df8c70c7a97b3a45b.png?auto=format&dpr=1&w=384"
+                  alt="" />
+                <div class="mt-4">
+                  <h1 class="text-2xl font-bold text-gray-700">Mocaverse #55</h1>
+                  <div class="mt-4 mb-2 flex justify-between pr-2">
+                    <div class="flex-col">
+                      <p>Floor Price</p>
+                      <button class="block text-lg font-bold cursor-auto">
+                        8.70 ETH
+                      </button>
+                    </div>
+                    <div class="flex-col">
+                      <p>Total Volume</p>
+                      <button class="block text-lg font-bold cursor-auto">
+                        1.05 ETH
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide card-swiper-slide md:!w-fit">
+          <div class="image-box">
+            <div class="flex justify-center items-center">
+              <div class="w- p-6 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
+                <img class="w-64 object-cover rounded-md"
+                  src="https://i.seadn.io/s/raw/files/07dcc200961e7f3ace8f48a2abf30aed.png?auto=format&dpr=1&w=384"
+                  alt="" />
+                <div class="mt-4">
+                  <h1 class="text-2xl font-bold text-gray-700">Skellie #77</h1>
+                  <div class="mt-4 mb-2 flex justify-between pr-2">
+                    <div class="flex-col">
+                      <p>Floor Price</p>
+                      <button class="block text-lg font-bold cursor-auto">
+                        0.05 ETH
+                      </button>
+                    </div>
+                    <div class="flex-col">
+                      <p>Total Volume</p>
+                      <button class="block text-lg font-bold cursor-auto">
+                        0.05 ETH
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide card-swiper-slide md:!w-fit">
+          <div class="image-box">
+            <div class="flex justify-center items-center">
+              <div class="w- p-6 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
+                <img class="w-64 object-cover rounded-t-md"
+                  src="https://i.seadn.io/s/raw/files/77a1ee619df3d03bd4d9ca438c7e2f40.png?auto=format&dpr=1&w=384"
+                  alt="" />
+                <div class="mt-4">
+                  <h1 class="text-2xl font-bold text-gray-700">Frogs on Blast #55</h1>
+                  <div class="mt-4 mb-2 flex justify-between pr-2">
+                    <div class="flex-col">
+                      <p>Floor Price</p>
+                      <button class="block text-lg font-bold cursor-auto">
+                        7.05 ETH
+                      </button>
+                    </div>
+                    <div class="flex-col">
+                      <p>Total Volume</p>
+                      <button class="block text-lg font-bold cursor-auto">
+                        0.05 ETH
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tranding-slider-control">
+      <div class="swiper-button-next swiper-navBtn swiper-button-next3 slider-arrow">
+        <ion-icon name="arrow-forward-circle" class="md:!hidden"></ion-icon>
+      </div>
+      <div class="swiper-button-prev swiper-navBtn swiper-button-prev3 slider-arrow">
+        <ion-icon name="arrow-back-circle" class="md:!hidden"></ion-icon>
+      </div>
+      <div class="swiper-pagination swiper-pagination3"></div>
+    </div>
+  </div>
+  <!-- TRENDING IN PFP'S SECTION ENDED -->
+
+  <br />
+  <br />
+
+  <!-- FOOTER SECTION STARTED -->
+  <footer class="bg-white">
+    <div class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+        <div>
+          <div class="font-[mainFont] text-4xl">
+            <h1 class="text-[#E82B2B]">Nusantara NFT</h1>
+          </div>
+
+          <p class="mt-4 max-w-xs text-gray-500">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse non
+            cupiditate quae nam molestias.
+          </p>
+
+          <ul class="mt-8 flex gap-6">
+            <li>
+              <a href="#" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
+                <span class="sr-only">Facebook</span>
+
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
+                <span class="sr-only">Instagram</span>
+
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
+                <span class="sr-only">Twitter</span>
+
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
+                <span class="sr-only">GitHub</span>
+
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
+                <span class="sr-only">Dribbble</span>
+
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="grid grid-cols-4 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
+          <div>
+            <p class="font-medium text-gray-900">Services</p>
+
+            <ul class="mt-6 space-y-4 text-sm">
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                  1on1 Coaching
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                  Company Review
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                  Accounts Review
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                  HR Consulting
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                  SEO Optimisation
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="font-medium text-gray-900">Company</p>
+
+            <ul class="mt-6 space-y-4 text-sm">
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                  About
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                  Meet the Team
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                  Accounts Review
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="font-medium text-gray-900">Helpful Links</p>
+
+            <ul class="mt-6 space-y-4 text-sm">
+              <li>
+                <a href="/dist/page/contact/index.html" class="text-gray-700 transition hover:opacity-75">
+                  Contact
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                  FAQs
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                  Live Chat
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="font-medium text-gray-900">Legal</p>
+
+            <ul class="mt-6 space-y-4 text-sm">
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                  Accessibility
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                  Returns Policy
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                  Refund Policy
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                  Hiring Statistics
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-xs text-gray-500">
+        &copy; 2022. Company Name. All rights reserved.
+      </p>
+    </div>
+  </footer>
+  <!-- FOOTER SECTION ENDED -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="/dist/jquery.js"></script>
+  <script src="/dist/swiper-bundle.min.js"></script>
+  <script src="/src/script.js"></script>
+  <script src="script.js"></script>
+  <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
+</body>
+
+</html>
